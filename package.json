@@ -1,0 +1,21 @@
+{
+  "name": "streamlink-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@typegoose/typegoose": "^9.2.0",
+    "@types/node": "^16.11.10",
+    "axios": "^0.24.0",
+    "mongoose": "^6.0.14",
+    "puppeteer": "^12.0.1",
+    "query-string": "^7.0.1",
+    "string-similarity": "^4.0.4",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/string-similarity": "^4.0.0"
+  }
+}
