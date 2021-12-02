@@ -1,7 +1,7 @@
 import puppeteer, { ElementHandle } from "puppeteer";
 import { Content } from "../entities/Content";
 
-export const primeSearch = async (keyWord: string) => {
+export const primeSearch = async (keyWord: string): Promise<Content[]> => {
   const browser = await puppeteer.launch({
     headless: false,
   });
@@ -14,17 +14,17 @@ export const primeSearch = async (keyWord: string) => {
 
   const contents = await Promise.all(containers.map(getPicture));
 
-  console.log(contents);
-
   await browser.close();
+
+  return contents;
 };
 
 const getPicture = async (
   container: ElementHandle<HTMLDivElement>
 ): Promise<Content> => {
-  const img = await container.$("img");
-  const src = await img.getProperty("src");
-  const url = await src.jsonValue<string>();
+  const imageElement = await container.$("img");
+  const srcProperty = await imageElement.getProperty("src");
+  const image = await srcProperty.jsonValue<string>();
 
   const description = await container.$eval(
     "p",
@@ -36,10 +36,16 @@ const getPicture = async (
     (element) => element.textContent
   );
 
+  const url = await container.$eval(
+    "a",
+    (element: HTMLAnchorElement) => element.href
+  );
+
   return {
-    pictures: [url],
+    pictures: [image],
     description,
     title,
     provider: "prime",
+    url: url,
   };
 };
