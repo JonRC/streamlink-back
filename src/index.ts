@@ -1,21 +1,21 @@
 import { primeSearch } from "./providers/prime";
 import { readFileSync } from "fs";
 import { findBestMatch } from "string-similarity";
-import { netflixSearch } from "./providers/nextflix";
+import { netflixSearch } from "./providers/netflix";
 
-const keyWord = "o país";
+const keyWord = "criando";
 
-const searchResults = Promise.all([
-  primeSearch(keyWord),
-  netflixSearch(keyWord),
-]);
+Promise.all([primeSearch(keyWord), netflixSearch(keyWord)]).then(
+  (resultByProvider) => {
+    const results = resultByProvider.flat();
 
-searchResults
-  .then((searchResults) => searchResults.flat())
-  .then((results) =>
-    findBestMatch(
+    const match = findBestMatch(
       keyWord,
       results.map((result) => result.title)
-    )
-  )
-  .then(console.log);
+    );
+
+    const bestResult = results[match.bestMatchIndex];
+
+    console.log({ bestResult });
+  }
+);

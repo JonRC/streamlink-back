@@ -3,3 +3,5 @@ dist
 *.env
 !example.env
 *.cookies
+*.cookie
+*.localStorage

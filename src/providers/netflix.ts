@@ -1,6 +1,7 @@
 import { config } from "dotenv";
 import { writeFileSync } from "fs";
 import { readFile, writeFile } from "fs/promises";
+import { CookiesStorage } from "../util";
 config();
 
 import puppeteer, { ElementHandle, Page, Protocol } from "puppeteer";
@@ -16,7 +17,7 @@ export const netflixSearch = async (keyWork: string): Promise<Content[]> => {
     q: keyWork,
   });
 
-  const cookies = await getCookie();
+  const cookies = await CookiesStorage.load("netflix");
 
   await page.setCookie(...cookies);
 
@@ -32,7 +33,10 @@ export const netflixSearch = async (keyWork: string): Promise<Content[]> => {
       await page.waitForSelector(".search");
     });
 
-  await page.waitForSelector(".title-card-container");
+  const validSearch = await page
+    .waitForSelector(".title-card-container")
+    .catch((error) => false);
+  if (!validSearch) return [];
 
   const containers = await page.$$<HTMLDivElement>(".title-card-container");
 
@@ -44,13 +48,16 @@ export const netflixSearch = async (keyWork: string): Promise<Content[]> => {
 };
 
 const login = async (page: Page) => {
+  const login = process.env.NETFLIX_USERNAME;
+  const password = process.env.NETFLIX_PASSWORD;
+
   /**
    * Id and password
    */
   await page.goto("https://www.netflix.com/login");
   await page.waitForSelector("#id_userLoginId");
-  await page.type("#id_userLoginId", process.env.NEXTFLIX_USERNAME);
-  await page.type("#id_password", process.env.NEXTFLIX_PASSWORD);
+  await page.type("#id_userLoginId", login);
+  await page.type("#id_password", password);
   await page.click("button[type=submit]");
 
   /**
@@ -63,7 +70,7 @@ const login = async (page: Page) => {
    * Persist cache
    */
   const cookies = await page.cookies();
-  await writeFile("./netflix.cookies.json", JSON.stringify(cookies));
+  CookiesStorage.save("netflix", cookies);
 };
 
 const getCookie = async () => {
