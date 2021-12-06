@@ -86,7 +86,6 @@ const login = async (page: Page) => {
   const password = process.env.DISNEY_PASSWORD;
 
   await page.goto(`https://www.disneyplus.com/login`);
-  console.log("Login");
 
   await page.waitForSelector("#email");
   await page.type("#email", login);
@@ -113,7 +112,6 @@ const getUrl = (obj: Record<string, any>) => {
 
 const getContent = (obj: Record<string, any>) => {
   for (const key in obj) {
-    console.log(key);
     if (key === "content") return obj[key];
     if (typeof obj[key] === "object") return getContent(obj[key]);
   }
