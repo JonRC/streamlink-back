@@ -2,9 +2,9 @@ import puppeteer, { ElementHandle } from "puppeteer";
 import { stringify } from "querystring";
 import { Content } from "../entities/Content";
 
-export const globoplaySearch = async (keyWord: string): Promise<Content[]> => {
+export const globoplaySearch = async (keyWord: string) => {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
   });
 
   const page = await browser.newPage();
@@ -21,9 +21,11 @@ export const globoplaySearch = async (keyWord: string): Promise<Content[]> => {
 
   const results = await page.$$<HTMLDivElement>(".playkit-slider__item");
 
+  const contents = await Promise.all(results.map(getContent));
+
   await browser.close();
 
-  return await Promise.all(results.map(getContent));
+  return contents;
 };
 
 const getContent = async (

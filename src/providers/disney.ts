@@ -13,7 +13,7 @@ type Auth = { context: { token: string } };
 
 export const disneySearch = async (keyWord: string) => {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
   });
 
   const page = await browser.newPage();

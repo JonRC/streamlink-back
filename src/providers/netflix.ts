@@ -9,7 +9,7 @@ import { stringify } from "query-string";
 import { Content } from "../entities/Content";
 
 export const netflixSearch = async (keyWork: string): Promise<Content[]> => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
 
   const page = await browser.newPage();
 

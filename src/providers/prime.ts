@@ -3,7 +3,7 @@ import { Content } from "../entities/Content";
 
 export const primeSearch = async (keyWord: string): Promise<Content[]> => {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
   });
 
   const page = await browser.newPage();
