@@ -1,6 +1,5 @@
 import { config } from "dotenv";
-import { writeFileSync } from "fs";
-import { readFile, writeFile } from "fs/promises";
+import { readFile } from "fs/promises";
 import { CookiesStorage } from "../util";
 config();
 
@@ -8,7 +7,9 @@ import puppeteer, { ElementHandle, Page, Protocol } from "puppeteer";
 import { stringify } from "query-string";
 import { Content } from "../entities/Content";
 
-export const netflixSearch = async (keyWork: string): Promise<Content[]> => {
+export const netflixSearch = async (
+  keyWork: string
+): Promise<Omit<Content, "rating">[]> => {
   const browser = await puppeteer.launch({ headless: true });
 
   const page = await browser.newPage();
@@ -73,22 +74,9 @@ const login = async (page: Page) => {
   CookiesStorage.save("netflix", cookies);
 };
 
-const getCookie = async () => {
-  const cookieBuffer = await readFile("./netflix.cookies").catch((error) => {
-    console.error(error);
-    return "[]";
-  });
-
-  const cookies = JSON.parse(
-    cookieBuffer?.toString("utf-8")
-  ) as Protocol.Network.Cookie[];
-
-  return cookies;
-};
-
 const getContent = async (
   container: ElementHandle<HTMLDivElement>
-): Promise<Content> => {
+): Promise<Omit<Content, "rating">> => {
   const title = await container.$eval(
     "p.fallback-text",
     (element) => element?.textContent
@@ -111,5 +99,6 @@ const getContent = async (
     title,
     url,
     provider: "netflix",
+    foundAt: new Date(),
   };
 };

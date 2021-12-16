@@ -2,7 +2,9 @@ import puppeteer, { ElementHandle } from "puppeteer";
 import { Content } from "../entities/Content";
 import { CookiesStorage } from "../util";
 
-export const hboSearch = async (keyword: string) => {
+export const hboSearch = async (
+  keyword: string
+): Promise<Omit<Content, "rating">[]> => {
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -31,12 +33,14 @@ export const hboSearch = async (keyword: string) => {
 
   const contents = await Promise.all(containers.map(getContent));
 
+  await browser.close();
+
   return contents;
 };
 
 const getContent = async (
   container: ElementHandle<HTMLAnchorElement>
-): Promise<Content> => {
+): Promise<Omit<Content, "rating">> => {
   const title = await container.evaluate((anchor) => anchor?.ariaLabel);
   const url = await container.evaluate((anchor) => anchor?.href);
 
@@ -49,5 +53,6 @@ const getContent = async (
     provider: "hbo",
     title,
     url,
+    foundAt: new Date(),
   };
 };

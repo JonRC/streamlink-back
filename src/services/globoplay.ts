@@ -2,7 +2,9 @@ import puppeteer, { ElementHandle } from "puppeteer";
 import { stringify } from "querystring";
 import { Content } from "../entities/Content";
 
-export const globoplaySearch = async (keyWord: string) => {
+export const globoplaySearch = async (
+  keyWord: string
+): Promise<Omit<Content, "rating">[]> => {
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -30,7 +32,7 @@ export const globoplaySearch = async (keyWord: string) => {
 
 const getContent = async (
   result: ElementHandle<HTMLDivElement>
-): Promise<Content> => {
+): Promise<Omit<Content, "rating">> => {
   const image = await result.$eval("img", (img: HTMLImageElement) => img.src);
   const url = await result.$eval("a", (a: HTMLAnchorElement) => a.href);
   const title = await result.$eval("a", (a: HTMLAnchorElement) => a.title);
@@ -40,5 +42,6 @@ const getContent = async (
     provider: "globoplay",
     title,
     url,
+    foundAt: new Date(),
   };
 };

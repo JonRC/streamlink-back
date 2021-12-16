@@ -11,7 +11,9 @@ import { Content } from "../entities/Content";
 
 type Auth = { context: { token: string } };
 
-export const disneySearch = async (keyWord: string) => {
+export const disneySearch = async (
+  keyWord: string
+): Promise<Omit<Content, "rating">[]> => {
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -39,7 +41,7 @@ export const disneySearch = async (keyWord: string) => {
 
   const { hits } = data.data.search;
 
-  const contents: Content[] = hits.map((hit) => {
+  const contents: Omit<Content, "rating">[] = hits.map((hit) => {
     const videoId = hit?.hit?.family?.encodedFamilyId;
     const randomString = crypto.randomBytes(2).toString("hex");
     const picture = getUrl(hit?.hit?.image?.tile["1.78"]);
@@ -50,6 +52,7 @@ export const disneySearch = async (keyWord: string) => {
       pictures: [picture],
       title: title,
       url: `https://www.disneyplus.com/pt-br/movies/${randomString}/${videoId}`,
+      foundAt: new Date(),
     };
   });
 
@@ -100,6 +103,9 @@ const login = async (page: Page) => {
   const cookies = await page.cookies();
   CookiesStorage.save("disney", cookies);
   await LocalStorage.save("disney", page);
+
+  await page.goto(`https://www.disneyplus.com/select-profile`);
+  await page.waitForSelector(".profile-avatar-appear-done", { timeout: 8000 });
 };
 
 const getUrl = (obj: Record<string, any>) => {

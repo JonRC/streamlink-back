@@ -1,7 +1,9 @@
 import puppeteer, { ElementHandle } from "puppeteer";
 import { Content } from "../entities/Content";
 
-export const primeSearch = async (keyWord: string): Promise<Content[]> => {
+export const primeSearch = async (
+  keyWord: string
+): Promise<Omit<Content, "rating">[]> => {
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -21,7 +23,7 @@ export const primeSearch = async (keyWord: string): Promise<Content[]> => {
 
 const getPicture = async (
   container: ElementHandle<HTMLDivElement>
-): Promise<Content> => {
+): Promise<Omit<Content, "rating">> => {
   const imageElement = await container.$("img");
   const srcProperty = await imageElement.getProperty("src");
   const image = await srcProperty.jsonValue<string>();
@@ -47,5 +49,6 @@ const getPicture = async (
     title,
     provider: "prime",
     url: url,
+    foundAt: new Date(),
   };
 };
