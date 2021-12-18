@@ -5,3 +5,4 @@ dist
 *.cookies
 *.cookie
 *.localStorage
+result.json

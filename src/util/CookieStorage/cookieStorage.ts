@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, unlinkSync, writeFileSync } from "fs";
 import { readFile } from "fs/promises";
 import { resolve } from "path";
 import { Protocol } from "puppeteer";
@@ -23,3 +23,9 @@ export const load = async (
 
   return JSON.parse(cookiesJson) as Protocol.Network.Cookie[];
 };
+
+export const clear = async (provider: Provider) => {
+  const storagePath = resolve(__dirname, `${provider}.cookies`);
+
+  await unlinkSync(storagePath);
+}

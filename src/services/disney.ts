@@ -11,8 +11,14 @@ import { Content } from "../entities/Content";
 
 type Auth = { context: { token: string } };
 
-export const disneySearch = async (
-  keyWord: string
+export const disneySearch = (keyword: string) =>
+  doDisneySearch(keyword).catch((error) => {
+    onError(error);
+    return [];
+  });
+
+const doDisneySearch = async (
+  keyword: string
 ): Promise<Omit<Content, "rating">[]> => {
   const browser = await puppeteer.launch({
     headless: true,
@@ -30,7 +36,7 @@ export const disneySearch = async (
 
   const { token } = auth.context;
 
-  const url = `https://disney.content.edge.bamgrid.com/svc/search/disney/version/5.1/region/BR/audience/k-false,l-false/maturity/1450/language/pt-BR/queryType/ge/pageSize/30/query/${keyWord}`;
+  const url = `https://disney.content.edge.bamgrid.com/svc/search/disney/version/5.1/region/BR/audience/k-false,l-false/maturity/1450/language/pt-BR/queryType/ge/pageSize/30/query/${keyword}`;
 
   const { data } = await axios.get<DisneySearch>(url, {
     headers: {
@@ -103,9 +109,6 @@ const login = async (page: Page) => {
   const cookies = await page.cookies();
   CookiesStorage.save("disney", cookies);
   await LocalStorage.save("disney", page);
-
-  await page.goto(`https://www.disneyplus.com/select-profile`);
-  await page.waitForSelector(".profile-avatar-appear-done", { timeout: 8000 });
 };
 
 const getUrl = (obj: Record<string, any>) => {
@@ -122,4 +125,10 @@ const getContent = (obj: Record<string, any>) => {
     if (typeof obj[key] === "object") return getContent(obj[key]);
   }
   return undefined;
+};
+
+const onError = async (error: unknown) => {
+  console.error(error);
+  await CookiesStorage.clear("disney");
+  await LocalStorage.clear("disney");
 };

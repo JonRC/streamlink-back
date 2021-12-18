@@ -1,6 +1,7 @@
 import { findBestMatch } from "string-similarity";
 import { Content } from "../entities/Content";
 import { Search } from "../entities/Search";
+import { DateUtil } from "../util/Date";
 import { disneySearch } from "./disney";
 import { globoplaySearch } from "./globoplay";
 import { hboSearch } from "./hbo";
@@ -8,7 +9,10 @@ import { netflixSearch } from "./netflix";
 import { primeSearch } from "./prime";
 
 export const search = async (keyword: string): Promise<Search> => {
-  const minRating = 0.9;
+  const startedAt = new Date();
+
+  const minBestRate = 0.9;
+  const minGoodRate = 0.1;
 
   const providerPromises = contentProviders.map((provider) =>
     emptyOnError(provider)(keyword)
@@ -36,14 +40,24 @@ export const search = async (keyword: string): Promise<Search> => {
   }));
 
   const bestContents = contents.filter(
-    (content) => content.rating.rate >= minRating
+    (content) => content.rating.rate >= minBestRate
   );
+
+  const goodContents = contents.filter(
+    (content) => content.rating.rate >= minGoodRate
+  );
+
+  const finishedAt = new Date();
 
   const search: Search = {
     bestContents,
     contents,
     keyword,
     providers,
+    goodContents,
+    startedAt,
+    finishedAt,
+    duration: DateUtil.diff(finishedAt, startedAt),
   };
 
   return search;

@@ -1,3 +1,4 @@
+import { unlinkSync } from "fs";
 import { readFile, writeFile } from "fs/promises";
 import { resolve } from "path";
 import { Page } from "puppeteer";
@@ -40,4 +41,10 @@ export const load = async (provider: Provider, page: Page) => {
       localStorage.setItem(key, value);
     });
   }, storageStemsJson);
+};
+
+export const clear = async (provider: Provider) => {
+  const path = resolve(__dirname, `${provider}.localStorage`);
+
+  await unlinkSync(path);
 };
