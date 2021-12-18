@@ -8,6 +8,7 @@ import puppeteer, { Page } from "puppeteer";
 import axios from "axios";
 import { DisneySearch } from "../entities/DisneySearch";
 import { Content } from "../entities/Content";
+import { DateUtil } from "../util/Date";
 
 type Auth = { context: { token: string } };
 
@@ -20,6 +21,8 @@ export const disneySearch = (keyword: string) =>
 const doDisneySearch = async (
   keyword: string
 ): Promise<Omit<Content, "rating">[]> => {
+  const startedAt = new Date();
+
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -52,13 +55,16 @@ const doDisneySearch = async (
     const randomString = crypto.randomBytes(2).toString("hex");
     const picture = getUrl(hit?.hit?.image?.tile["1.78"]);
     const title = getContent(hit?.hit?.text?.title);
+    const foundAt = new Date();
 
     return {
       provider: "disney",
       pictures: [picture],
       title: title,
       url: `https://www.disneyplus.com/pt-br/movies/${randomString}/${videoId}`,
-      foundAt: new Date(),
+      foundAt,
+      startedAt,
+      duration: DateUtil.diff(foundAt, startedAt),
     };
   });
 

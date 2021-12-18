@@ -6,10 +6,13 @@ config();
 import puppeteer, { ElementHandle, Page, Protocol } from "puppeteer";
 import { stringify } from "query-string";
 import { Content } from "../entities/Content";
+import { DateUtil } from "../util/Date";
 
 export const netflixSearch = async (
   keyWork: string
 ): Promise<Omit<Content, "rating">[]> => {
+  const startedAt = new Date();
+
   const browser = await puppeteer.launch({ headless: true });
 
   const page = await browser.newPage();
@@ -41,7 +44,7 @@ export const netflixSearch = async (
 
   const containers = await page.$$<HTMLDivElement>(".title-card-container");
 
-  const contents = await Promise.all(containers.map(getContent));
+  const contents = await Promise.all(containers.map(getContent(startedAt)));
 
   await browser.close();
 
@@ -74,31 +77,37 @@ const login = async (page: Page) => {
   CookiesStorage.save("netflix", cookies);
 };
 
-const getContent = async (
-  container: ElementHandle<HTMLDivElement>
-): Promise<Omit<Content, "rating">> => {
-  const title = await container.$eval(
-    "p.fallback-text",
-    (element) => element?.textContent
-  );
+const getContent =
+  (startedAt: Date) =>
+  async (
+    container: ElementHandle<HTMLDivElement>
+  ): Promise<Omit<Content, "rating">> => {
+    const title = await container.$eval(
+      "p.fallback-text",
+      (element) => element?.textContent
+    );
 
-  const image = await container.$eval(
-    "img",
-    (element: HTMLImageElement) => element?.src
-  );
+    const image = await container.$eval(
+      "img",
+      (element: HTMLImageElement) => element?.src
+    );
 
-  const holeUrl = await container.$eval(
-    "img",
-    (element: HTMLImageElement) => element.closest("a")?.href
-  );
+    const holeUrl = await container.$eval(
+      "img",
+      (element: HTMLImageElement) => element.closest("a")?.href
+    );
 
-  const url = holeUrl.split("?")[0];
+    const url = holeUrl.split("?")[0];
 
-  return {
-    pictures: [image],
-    title,
-    url,
-    provider: "netflix",
-    foundAt: new Date(),
+    const foundAt = new Date();
+
+    return {
+      pictures: [image],
+      title,
+      url,
+      provider: "netflix",
+      foundAt,
+      startedAt,
+      duration: DateUtil.diff(foundAt, startedAt),
+    };
   };
-};

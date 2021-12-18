@@ -1,10 +1,13 @@
 import puppeteer, { ElementHandle } from "puppeteer";
 import { Content } from "../entities/Content";
 import { CookiesStorage } from "../util";
+import { DateUtil } from "../util/Date";
 
 export const hboSearch = async (
   keyword: string
 ): Promise<Omit<Content, "rating">[]> => {
+  const startedAt = new Date();
+
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -31,28 +34,34 @@ export const hboSearch = async (
     `a[href*=urn][aria-label]`
   );
 
-  const contents = await Promise.all(containers.map(getContent));
+  const contents = await Promise.all(containers.map(getContent(startedAt)));
 
   await browser.close();
 
   return contents;
 };
 
-const getContent = async (
-  container: ElementHandle<HTMLAnchorElement>
-): Promise<Omit<Content, "rating">> => {
-  const title = await container.evaluate((anchor) => anchor?.ariaLabel);
-  const url = await container.evaluate((anchor) => anchor?.href);
+const getContent =
+  (startedAt: Date) =>
+  async (
+    container: ElementHandle<HTMLAnchorElement>
+  ): Promise<Omit<Content, "rating">> => {
+    const title = await container.evaluate((anchor) => anchor?.ariaLabel);
+    const url = await container.evaluate((anchor) => anchor?.href);
 
-  const [, contentId] = url.match(/page:(\w+)/) || [];
+    const [, contentId] = url.match(/page:(\w+)/) || [];
 
-  const image = `https://art-gallery-latam.api.hbo.com/images/${contentId}/tileburnedin?size=360x203&compression=low&protection=false&scaleDownToFit=false&productCode=hboMax&overlayImage=urn:warnermedia:brand:not-in-a-hub&language=pt-br`;
+    const image = `https://art-gallery-latam.api.hbo.com/images/${contentId}/tileburnedin?size=360x203&compression=low&protection=false&scaleDownToFit=false&productCode=hboMax&overlayImage=urn:warnermedia:brand:not-in-a-hub&language=pt-br`;
 
-  return {
-    pictures: [image],
-    provider: "hbo",
-    title,
-    url,
-    foundAt: new Date(),
+    const foundAt = new Date();
+
+    return {
+      pictures: [image],
+      provider: "hbo",
+      title,
+      url,
+      foundAt,
+      startedAt,
+      duration: DateUtil.diff(foundAt, startedAt),
+    };
   };
-};

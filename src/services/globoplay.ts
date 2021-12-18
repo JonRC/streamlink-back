@@ -1,10 +1,13 @@
 import puppeteer, { ElementHandle } from "puppeteer";
 import { stringify } from "querystring";
 import { Content } from "../entities/Content";
+import { DateUtil } from "../util/Date";
 
 export const globoplaySearch = async (
   keyWord: string
 ): Promise<Omit<Content, "rating">[]> => {
+  const startedAt = new Date();
+
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -23,25 +26,31 @@ export const globoplaySearch = async (
 
   const results = await page.$$<HTMLDivElement>(".playkit-slider__item");
 
-  const contents = await Promise.all(results.map(getContent));
+  const contents = await Promise.all(results.map(getContent(startedAt)));
 
   await browser.close();
 
   return contents;
 };
 
-const getContent = async (
-  result: ElementHandle<HTMLDivElement>
-): Promise<Omit<Content, "rating">> => {
-  const image = await result.$eval("img", (img: HTMLImageElement) => img.src);
-  const url = await result.$eval("a", (a: HTMLAnchorElement) => a.href);
-  const title = await result.$eval("a", (a: HTMLAnchorElement) => a.title);
+const getContent =
+  (startedAt: Date) =>
+  async (
+    result: ElementHandle<HTMLDivElement>
+  ): Promise<Omit<Content, "rating">> => {
+    const image = await result.$eval("img", (img: HTMLImageElement) => img.src);
+    const url = await result.$eval("a", (a: HTMLAnchorElement) => a.href);
+    const title = await result.$eval("a", (a: HTMLAnchorElement) => a.title);
 
-  return {
-    pictures: [image],
-    provider: "globoplay",
-    title,
-    url,
-    foundAt: new Date(),
+    const foundAt = new Date();
+
+    return {
+      pictures: [image],
+      provider: "globoplay",
+      title,
+      url,
+      foundAt,
+      startedAt,
+      duration: DateUtil.diff(foundAt, startedAt),
+    };
   };
-};

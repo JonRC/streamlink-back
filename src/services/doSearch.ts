@@ -8,7 +8,7 @@ import { hboSearch } from "./hbo";
 import { netflixSearch } from "./netflix";
 import { primeSearch } from "./prime";
 
-export const search = async (keyword: string): Promise<Search> => {
+export const doSearch = async (keyword: string): Promise<Search> => {
   const startedAt = new Date();
 
   const minBestRate = 0.9;

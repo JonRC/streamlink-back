@@ -4,7 +4,9 @@ export type Content = {
   title: string;
   url: string;
   provider: Provider;
+  startedAt: Date;
   foundAt: Date;
+  duration: number;
   rating: {
     rate: number;
     keyword: string;

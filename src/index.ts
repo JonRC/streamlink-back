@@ -1,13 +1,9 @@
-import { writeFileSync } from "fs";
-import { search } from "./services/search";
+import { serverSetup } from "./server/setup";
 
-const keyword = "black mirror";
-import moment from "moment";
+const init = async () => {
+  serverSetup();
+};
 
-search(keyword).then((search) => {
-  writeFileSync("result.json", JSON.stringify(search, null, 2));
-  console.log(
-    search.contents.length,
-    moment(search.finishedAt).diff(search.startedAt, "milliseconds")
-  );
+init().catch((error) => {
+  console.error();
 });
