@@ -47,9 +47,11 @@ const getContent =
     container: ElementHandle<HTMLAnchorElement>
   ): Promise<Omit<Content, "rating">> => {
     const title = await container.evaluate((anchor) => anchor?.ariaLabel);
-    const url = await container.evaluate((anchor) => anchor?.href);
+    const urlPath = await container.evaluate((anchor) => anchor?.href);
 
-    const [, contentId] = url.match(/page:(\w+)/) || [];
+    const url = `https://play.hbomax.com/${urlPath}`;
+
+    const [, contentId] = urlPath.match(/page:(\w+)/) || [];
 
     const imageUrl = `https://art-gallery-latam.api.hbo.com/images/${contentId}/tileburnedin?size=360x203&compression=low&protection=false&scaleDownToFit=false&productCode=hboMax&overlayImage=urn:warnermedia:brand:not-in-a-hub&language=pt-br`;
 

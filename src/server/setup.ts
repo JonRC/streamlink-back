@@ -7,11 +7,7 @@ export const serverSetup = () => {
 
   const port = process.env.PORT || 3003;
 
-  app.use(
-    cors({
-      origin: "*",
-    })
-  );
+  app.use(cors());
 
   app.use((request, response, next) => {
     console.log(new Date());
@@ -22,7 +18,7 @@ export const serverSetup = () => {
 
   app.use(MainRouter);
 
-  app.listen(port, () => console.log("on"));
+  app.listen(port as any, "127.0.0.1", () => console.log("on"));
 
   return app;
 };
