@@ -51,12 +51,16 @@ const getContent =
 
     const [, contentId] = url.match(/page:(\w+)/) || [];
 
-    const image = `https://art-gallery-latam.api.hbo.com/images/${contentId}/tileburnedin?size=360x203&compression=low&protection=false&scaleDownToFit=false&productCode=hboMax&overlayImage=urn:warnermedia:brand:not-in-a-hub&language=pt-br`;
+    const imageUrl = `https://art-gallery-latam.api.hbo.com/images/${contentId}/tileburnedin?size=360x203&compression=low&protection=false&scaleDownToFit=false&productCode=hboMax&overlayImage=urn:warnermedia:brand:not-in-a-hub&language=pt-br`;
 
     const foundAt = new Date();
 
     return {
-      pictures: [image],
+      image: {
+        url: imageUrl,
+        height: 203,
+        width: 360,
+      },
       provider: "hbo",
       title,
       url,

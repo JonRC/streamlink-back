@@ -1,5 +1,9 @@
 export type Content = {
-  pictures: string[];
+  image: {
+    url: string;
+    width?: number;
+    height?: number;
+  };
   description?: string;
   title: string;
   url: string;

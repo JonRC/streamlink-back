@@ -87,7 +87,7 @@ const getContent =
       (element) => element?.textContent
     );
 
-    const image = await container.$eval(
+    const imageUrl = await container.$eval(
       "img",
       (element: HTMLImageElement) => element?.src
     );
@@ -102,7 +102,9 @@ const getContent =
     const foundAt = new Date();
 
     return {
-      pictures: [image],
+      image: {
+        url: imageUrl,
+      },
       title,
       url,
       provider: "netflix",

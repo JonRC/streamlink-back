@@ -31,7 +31,7 @@ const getPicture =
   ): Promise<Omit<Content, "rating">> => {
     const imageElement = await container.$("img");
     const srcProperty = await imageElement.getProperty("src");
-    const image = await srcProperty.jsonValue<string>();
+    const imageUrl = await srcProperty.jsonValue<string>();
 
     const description = await container.$eval(
       "p",
@@ -51,7 +51,9 @@ const getPicture =
     const foundAt = new Date();
 
     return {
-      pictures: [image],
+      image: {
+        url: imageUrl,
+      },
       description,
       title,
       provider: "prime",

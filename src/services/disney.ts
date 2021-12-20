@@ -53,13 +53,15 @@ const doDisneySearch = async (
   const contents: Omit<Content, "rating">[] = hits.map((hit) => {
     const videoId = hit?.hit?.family?.encodedFamilyId;
     const randomString = crypto.randomBytes(2).toString("hex");
-    const picture = getUrl(hit?.hit?.image?.tile["1.78"]);
+    const imageUrl = getUrl(hit?.hit?.image?.tile["1.78"]);
     const title = getContent(hit?.hit?.text?.title);
     const foundAt = new Date();
 
     return {
       provider: "disney",
-      pictures: [picture],
+      image: {
+        url: imageUrl,
+      },
       title: title,
       url: `https://www.disneyplus.com/pt-br/movies/${randomString}/${videoId}`,
       foundAt,

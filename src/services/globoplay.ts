@@ -38,14 +38,19 @@ const getContent =
   async (
     result: ElementHandle<HTMLDivElement>
   ): Promise<Omit<Content, "rating">> => {
-    const image = await result.$eval("img", (img: HTMLImageElement) => img.src);
+    const imageUrl = await result.$eval(
+      "img",
+      (img: HTMLImageElement) => img.src
+    );
     const url = await result.$eval("a", (a: HTMLAnchorElement) => a.href);
     const title = await result.$eval("a", (a: HTMLAnchorElement) => a.title);
 
     const foundAt = new Date();
 
     return {
-      pictures: [image],
+      image: {
+        url: imageUrl,
+      },
       provider: "globoplay",
       title,
       url,
