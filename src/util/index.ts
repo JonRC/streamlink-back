@@ -1,2 +1,2 @@
-export * as CookiesStorage from "./CookieStorage";
-export * as LocalStorage from "./LocalStorage";
+export * as CookiesStorage from './CookieStorage'
+export * as LocalStorage from './LocalStorage'

@@ -6,3 +6,4 @@ dist
 *.cookie
 *.localStorage
 result.json
+yarn-error.log

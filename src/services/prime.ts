@@ -1,65 +1,65 @@
-import puppeteer, { ElementHandle } from "puppeteer";
-import { Content } from "../entities/Content";
-import { DateUtil } from "../util/Date";
+import puppeteer, { ElementHandle } from 'puppeteer'
+import { Content } from '../entities/Content'
+import { DateUtil } from '../util/Date'
 
 export const primeSearch = async (
   keyWord: string
-): Promise<Omit<Content, "rating">[]> => {
-  const startedAt = new Date();
+): Promise<Omit<Content, 'rating'>[]> => {
+  const startedAt = new Date()
 
   const browser = await puppeteer.launch({
-    headless: true,
-  });
+    headless: true
+  })
 
-  const page = await browser.newPage();
+  const page = await browser.newPage()
 
-  await page.goto(`https://www.primevideo.com/search/?phrase=${keyWord}`);
+  await page.goto(`https://www.primevideo.com/search/?phrase=${keyWord}`)
 
-  const containers = await page.$$<HTMLDivElement>(".av-hover-wrapper");
+  const containers = await page.$$<HTMLDivElement>('.av-hover-wrapper')
 
-  const contents = await Promise.all(containers.map(getPicture(startedAt)));
+  const contents = await Promise.all(containers.map(getPicture(startedAt)))
 
-  await browser.close();
+  await browser.close()
 
-  return contents;
-};
+  return contents
+}
 
 const getPicture =
   (startedAt: Date) =>
   async (
     container: ElementHandle<HTMLDivElement>
-  ): Promise<Omit<Content, "rating">> => {
-    const imageElement = await container.$("img");
-    const srcProperty = await imageElement.getProperty("src");
-    const imageUrl = await srcProperty.jsonValue<string>();
+  ): Promise<Omit<Content, 'rating'>> => {
+    const imageElement = await container.$('img')
+    const srcProperty = await imageElement.getProperty('src')
+    const imageUrl = await srcProperty.jsonValue<string>()
 
     const description = await container.$eval(
-      "p",
-      (element) => element.textContent
-    );
+      'p',
+      element => element.textContent
+    )
 
     const title = await container.$eval(
-      "span > a",
-      (element) => element.textContent
-    );
+      'span > a',
+      element => element.textContent
+    )
 
     const url = await container.$eval(
-      "a",
+      'a',
       (element: HTMLAnchorElement) => element.href
-    );
+    )
 
-    const foundAt = new Date();
+    const foundAt = new Date()
 
     return {
       image: {
-        url: imageUrl,
+        url: imageUrl
       },
       description,
       title,
-      provider: "prime",
-      url: url,
+      provider: 'prime',
+      url,
       foundAt,
       startedAt,
-      duration: DateUtil.diff(foundAt, startedAt),
-    };
-  };
+      duration: DateUtil.diff(foundAt, startedAt)
+    }
+  }

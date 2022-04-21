@@ -4,32 +4,32 @@ export type DisneySearch = {
       hits: {
         hit: {
           family: {
-            encodedFamilyId: string;
-          };
+            encodedFamilyId: string
+          }
           image: {
             tile: {
-              "1.78": {
+              '1.78': {
                 video: {
                   default: {
-                    url: string;
-                  };
-                };
-              };
-            };
-          };
+                    url: string
+                  }
+                }
+              }
+            }
+          }
           text: {
             title: {
               full: {
                 program: {
                   default: {
-                    content: string;
-                  };
-                };
-              };
-            };
-          };
-        };
-      }[];
-    };
-  };
-};
+                    content: string
+                  }
+                }
+              }
+            }
+          }
+        }
+      }[]
+    }
+  }
+}

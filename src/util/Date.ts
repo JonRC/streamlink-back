@@ -1,13 +1,13 @@
-import moment, { unitOfTime } from "moment";
+import moment, { unitOfTime } from 'moment'
 
 const diff = (
   end: Date,
   start: Date,
-  unit: unitOfTime.Diff = "milliseconds"
+  unit: unitOfTime.Diff = 'milliseconds'
 ) => {
-  const endMoment = moment(end);
-  const startMoment = moment(start);
-  return endMoment.diff(startMoment, unit);
-};
+  const endMoment = moment(end)
+  const startMoment = moment(start)
+  return endMoment.diff(startMoment, unit)
+}
 
-export const DateUtil = { diff };
+export const DateUtil = { diff }

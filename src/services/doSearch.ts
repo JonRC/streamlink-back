@@ -1,53 +1,53 @@
-import { findBestMatch } from "string-similarity";
-import { Content } from "../entities/Content";
-import { Search } from "../entities/Search";
-import { DateUtil } from "../util/Date";
-import { disneySearch } from "./disney";
-import { globoplaySearch } from "./globoplay";
-import { hboSearch } from "./hbo";
-import { netflixSearch } from "./netflix";
-import { primeSearch } from "./prime";
+import { findBestMatch } from 'string-similarity'
+import { Content } from '../entities/Content'
+import { Search } from '../entities/Search'
+import { DateUtil } from '../util/Date'
+import { disneySearch } from './disney'
+import { globoplaySearch } from './globoplay'
+import { hboSearch } from './hbo'
+import { netflixSearch } from './netflix'
+import { primeSearch } from './prime'
 
 export const doSearch = async (keyword: string): Promise<Search> => {
-  const startedAt = new Date();
+  const startedAt = new Date()
 
-  const minBestRate = 0.9;
-  const minGoodRate = 0.1;
+  const minBestRate = 0.9
+  const minGoodRate = 0.1
 
-  const providerPromises = contentProviders.map((provider) =>
+  const providerPromises = contentProviders.map(provider =>
     emptyOnError(provider)(keyword)
-  );
+  )
 
   const providerResults = await Promise.all(providerPromises).then(
-    (nestedContents) => nestedContents.filter((contents) => contents.length)
-  );
+    nestedContents => nestedContents.filter(contents => contents.length)
+  )
 
-  const providers = providerResults.map((contents) => contents[0].provider);
+  const providers = providerResults.map(contents => contents[0].provider)
 
-  const rawContents = flatContent(providerResults);
+  const rawContents = flatContent(providerResults)
 
   const matches = findBestMatch(
     keyword.toLowerCase(),
-    rawContents.map((content) => content.title.toLowerCase())
-  );
+    rawContents.map(content => content.title.toLowerCase())
+  )
 
   const contents: Content[] = rawContents.map((rawContent, index) => ({
     ...rawContent,
     rating: {
       rate: matches.ratings[index].rating,
-      keyword,
-    },
-  }));
+      keyword
+    }
+  }))
 
   const bestContents = contents.filter(
-    (content) => content.rating.rate >= minBestRate
-  );
+    content => content.rating.rate >= minBestRate
+  )
 
   const goodContents = contents.filter(
-    (content) => content.rating.rate >= minGoodRate
-  );
+    content => content.rating.rate >= minGoodRate
+  )
 
-  const finishedAt = new Date();
+  const finishedAt = new Date()
 
   const search: Search = {
     bestContents,
@@ -57,52 +57,52 @@ export const doSearch = async (keyword: string): Promise<Search> => {
     goodContents,
     startedAt,
     finishedAt,
-    duration: DateUtil.diff(finishedAt, startedAt),
-  };
+    duration: DateUtil.diff(finishedAt, startedAt)
+  }
 
-  return search;
-};
+  return search
+}
 
-type ContentProvider = (keyword: string) => Promise<Omit<Content, "rating">[]>;
+type ContentProvider = (keyword: string) => Promise<Omit<Content, 'rating'>[]>
 
 const contentProviders: ContentProvider[] = [
   disneySearch,
   globoplaySearch,
   hboSearch,
   netflixSearch,
-  primeSearch,
-];
+  primeSearch
+]
 
 type emptyOnError = <R, P>(
   fn: (...params: P[]) => Promise<R[]>
-) => (...params: P[]) => Promise<R[]>;
+) => (...params: P[]) => Promise<R[]>
 
 const emptyOnError: emptyOnError =
-  (fn) =>
+  fn =>
   (...params) =>
-    fn(...params).catch((error) => {
-      console.error(error);
-      return [];
-    });
+    fn(...params).catch(error => {
+      console.error(error)
+      return []
+    })
 
 type flatContent = (
-  nestedContents: Omit<Content, "rating">[][]
-) => Omit<Content, "rating">[];
+  nestedContents: Omit<Content, 'rating'>[][]
+) => Omit<Content, 'rating'>[]
 
-const flatContent: flatContent = (nestedContents) => {
+const flatContent: flatContent = nestedContents => {
   const biggestLength = Math.max(
-    ...nestedContents.map((nestedContent) => nestedContent.length)
-  );
+    ...nestedContents.map(nestedContent => nestedContent.length)
+  )
 
-  const contents: Omit<Content, "rating">[] = [];
+  const contents: Omit<Content, 'rating'>[] = []
 
   for (let index = 0; index < biggestLength; index++) {
     const sameLevelContents = nestedContents
-      .map((nestedContent) => nestedContent?.[index])
-      .filter((content) => content);
+      .map(nestedContent => nestedContent?.[index])
+      .filter(content => content)
 
-    contents.push(...sameLevelContents);
+    contents.push(...sameLevelContents)
   }
 
-  return contents;
-};
+  return contents
+}
