@@ -1,0 +1,5 @@
+export * from './disney'
+export * from './globoplay'
+export * from './hbo'
+export * from './netflix'
+export * from './prime'

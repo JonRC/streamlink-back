@@ -1,9 +1,10 @@
-import { unlinkSync, writeFileSync } from 'fs'
+import { statSync, unlinkSync, writeFileSync } from 'fs'
 import { readFile } from 'fs/promises'
 import { resolve } from 'path'
+
 import { Protocol } from 'puppeteer'
 
-import { Provider } from '../../entities/Content'
+import { Provider } from 'Database/Entities/Content'
 
 export const save = (
   provider: Provider,
@@ -26,6 +27,9 @@ export const load = async (
 
 export const clear = async (provider: Provider) => {
   const storagePath = resolve(__dirname, `${provider}.cookies`)
-
+  const existsStorageFile = await statSync(storagePath, {
+    throwIfNoEntry: false
+  })
+  if (!existsStorageFile) return
   await unlinkSync(storagePath)
 }

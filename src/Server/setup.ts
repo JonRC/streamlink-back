@@ -1,5 +1,9 @@
+/* eslint simple-import-sort/imports: "off" */
+
 import express from 'express'
+import 'express-async-errors'
 import cors from 'cors'
+
 import { MainRouter } from './router'
 
 export const serverSetup = () => {

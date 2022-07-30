@@ -1,7 +1,7 @@
 import puppeteer, { ElementHandle } from 'puppeteer'
-import { Content } from '../entities/Content'
-import { CookiesStorage } from '../util'
-import { DateUtil } from '../util/Date'
+import { Content } from 'Database/Entities/Content'
+import { CookiesStorage } from 'Util'
+import { DateUtil } from 'Util/Date'
 
 export const hboSearch = async (
   keyword: string

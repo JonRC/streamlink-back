@@ -1,9 +1,9 @@
-import { serverSetup } from "./server/setup";
+import { serverSetup } from 'Server/setup'
 
 const init = async () => {
-  serverSetup();
-};
+  serverSetup()
+}
 
-init().catch((error) => {
-  console.error();
-});
+init().catch(() => {
+  console.error()
+})

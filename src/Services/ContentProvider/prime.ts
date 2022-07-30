@@ -1,6 +1,6 @@
 import puppeteer, { ElementHandle } from 'puppeteer'
-import { Content } from '../entities/Content'
-import { DateUtil } from '../util/Date'
+import { Content } from 'Database/Entities/Content'
+import { DateUtil } from 'Util/Date'
 
 export const primeSearch = async (
   keyWord: string

@@ -1,10 +1,10 @@
 import { config } from 'dotenv'
-import { CookiesStorage } from '../util'
+import { CookiesStorage } from 'Util'
 
 import puppeteer, { ElementHandle, Page } from 'puppeteer'
 import { stringify } from 'query-string'
-import { Content } from '../entities/Content'
-import { DateUtil } from '../util/Date'
+import { Content } from 'Database/Entities/Content'
+import { DateUtil } from 'Util/Date'
 config()
 
 export const netflixSearch = async (

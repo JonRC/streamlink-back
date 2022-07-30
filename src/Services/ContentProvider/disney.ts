@@ -1,27 +1,27 @@
-import { config } from 'dotenv'
-
-import { CookiesStorage, LocalStorage } from '../util'
 import crypto from 'crypto'
 
-import puppeteer, { Page } from 'puppeteer'
 import axios from 'axios'
-import { DisneySearch } from '../entities/DisneySearch'
-import { Content } from '../entities/Content'
-import { DateUtil } from '../util/Date'
+import { config } from 'dotenv'
+import puppeteer, { Page } from 'puppeteer'
+
+import { CookiesStorage, LocalStorage } from 'Util'
+
+import { ContentProvider, ProviderResult } from './ContentProvider'
+import { DisneySearch } from './DisneySearch'
 config()
 
 type Auth = { context: { token: string } }
 
-export const disneySearch = (keyword: string) =>
-  doDisneySearch(keyword).catch(error => {
+export const disneySearch: ContentProvider = (
+  keyword: string,
+  headless = true
+) =>
+  doDisneySearch(keyword, headless).catch(error => {
     onError(error)
     return []
   })
 
-const doDisneySearch = async (
-  keyword: string,
-  headless: boolean = true
-): Promise<Omit<Content, 'rating'>[]> => {
+const doDisneySearch: ContentProvider = async (keyword, headless) => {
   const startedAt = new Date()
 
   const browser = await puppeteer.launch({
@@ -51,27 +51,29 @@ const doDisneySearch = async (
 
   const { hits } = data.data.search
 
-  const contents: Omit<Content, 'rating'>[] = hits.map(hit => {
+  const results = hits.map<ProviderResult>(hit => {
     const videoId = hit?.hit?.family?.encodedFamilyId
     const randomString = crypto.randomBytes(2).toString('hex')
-    const imageUrl = getUrl(hit?.hit?.image?.tile['1.78'])
-    const title = getContent(hit?.hit?.text?.title)
+    const imageUrl = imageUrlFromImageTitleObj(hit?.hit?.image?.tile['1.78'])
+    const title = titleFromTextTitleObj(hit?.hit?.text?.title)
     const foundAt = new Date()
+    const contentUrl = `https://www.disneyplus.com/pt-br/movies/${randomString}/${videoId}`
 
-    return {
-      provider: 'disney',
-      image: {
-        url: imageUrl
+    const providerResult: ProviderResult = {
+      content: {
+        imageUrl,
+        provider: 'disney',
+        title,
+        url: contentUrl
       },
-      title,
-      url: `https://www.disneyplus.com/pt-br/movies/${randomString}/${videoId}`,
       foundAt,
-      startedAt,
-      duration: DateUtil.diff(foundAt, startedAt)
+      startedAt
     }
+
+    return providerResult
   })
 
-  return contents
+  return results
 }
 
 const getAuthJson = async (page: Page) => {
@@ -87,12 +89,16 @@ const getAuthJson = async (page: Page) => {
   return authJson
 }
 
-const tokenFromLocalStorage = async (page: Page): Promise<string | null> => {
+const tokenFromLocalStorage = async (page: Page): Promise<string> => {
   const tokenJson = await page.evaluate(() => {
     const tokenKey = Object.keys(localStorage).find(key =>
       key.match('access--disney')
     )
+    if (!tokenKey) throw new Error('Disney: Could not find token')
+
     const tokenJson = localStorage.getItem(tokenKey)
+    if (!tokenJson) throw new Error('Disney: Could not find token')
+
     return tokenJson
   })
 
@@ -120,20 +126,20 @@ const login = async (page: Page) => {
   await LocalStorage.save('disney', page)
 }
 
-const getUrl = (obj: Record<string, any>) => {
+const imageUrlFromImageTitleObj = (obj: Record<string, any>): string => {
   for (const key in obj) {
     if (key === 'url') return obj[key]
-    if (typeof obj[key] === 'object') return getUrl(obj[key])
+    if (typeof obj[key] === 'object') return imageUrlFromImageTitleObj(obj[key])
   }
-  return undefined
+  throw new Error('Disney: Could not find image url')
 }
 
-const getContent = (obj: Record<string, any>) => {
+const titleFromTextTitleObj = (obj: Record<string, any>): string => {
   for (const key in obj) {
     if (key === 'content') return obj[key]
-    if (typeof obj[key] === 'object') return getContent(obj[key])
+    if (typeof obj[key] === 'object') return titleFromTextTitleObj(obj[key])
   }
-  return undefined
+  throw new Error('Disney: Could not find title')
 }
 
 const onError = async (error: unknown) => {

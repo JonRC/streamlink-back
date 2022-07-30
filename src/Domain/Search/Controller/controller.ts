@@ -1,8 +1,8 @@
 import { Request, Response } from 'express'
-import { Content } from '../../entities/Content'
-import { doSearch } from '../../services/doSearch'
+import { Content } from 'Database/Entities/Content'
 import axios from 'axios'
 import sizeOf from 'image-size'
+import * as SearchUsecase from 'Domain/Search/Usecase'
 
 export const doSearchController = async (
   request: Request<{}, {}, { keyword: string }>,
@@ -10,7 +10,7 @@ export const doSearchController = async (
 ) => {
   const { keyword } = request.body
 
-  const search = await doSearch(keyword)
+  const search = await SearchUsecase.doSearch(keyword)
 
   const searchMaxLength = search.providers.length * 10
 

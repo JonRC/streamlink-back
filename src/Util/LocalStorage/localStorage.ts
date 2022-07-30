@@ -2,7 +2,7 @@ import { unlinkSync } from 'fs'
 import { readFile, writeFile } from 'fs/promises'
 import { resolve } from 'path'
 import { Page } from 'puppeteer'
-import { Provider } from '../../entities/Content'
+import { Provider } from 'Database/Entities/Content'
 import { StorageItem } from './StorageItem'
 
 export const save = async (provider: Provider, page: Page) => {
