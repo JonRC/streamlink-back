@@ -1,15 +1,16 @@
 import puppeteer, { ElementHandle } from 'puppeteer'
+
 import { Content } from 'Database/Entities/Content'
 import { CookiesStorage } from 'Util'
 import { DateUtil } from 'Util/Date'
 
-export const hboSearch = async (
-  keyword: string
-): Promise<Omit<Content, 'rating'>[]> => {
+import { ContentProvider, ProviderResult } from './ContentProvider'
+
+export const hboProvider: ContentProvider = async (keyword, headless) => {
   const startedAt = new Date()
 
   const browser = await puppeteer.launch({
-    headless: true
+    headless
   })
 
   const page = await browser.newPage()
@@ -42,11 +43,8 @@ export const hboSearch = async (
 }
 
 const getContent =
-  (startedAt: Date) =>
-  async (
-    container: ElementHandle<HTMLAnchorElement>
-  ): Promise<Omit<Content, 'rating'>> => {
-    const title = await container.evaluate(anchor => anchor?.ariaLabel)
+  (startedAt: Date) => async (container: ElementHandle<HTMLAnchorElement>) => {
+    const title = (await container.evaluate(anchor => anchor?.ariaLabel)) || ''
     const urlPath = await container.evaluate(anchor => anchor?.href)
 
     const url = `https://play.hbomax.com/${urlPath}`
@@ -55,19 +53,16 @@ const getContent =
 
     const imageUrl = `https://art-gallery-latam.api.hbo.com/images/${contentId}/tileburnedin?size=360x203&compression=low&protection=false&scaleDownToFit=false&productCode=hboMax&overlayImage=urn:warnermedia:brand:not-in-a-hub&language=pt-br`
 
-    const foundAt = new Date()
-
-    return {
-      image: {
-        url: imageUrl,
-        height: 203,
-        width: 360
+    const result: ProviderResult = {
+      content: {
+        imageUrl,
+        provider: 'hbo',
+        title,
+        url
       },
-      provider: 'hbo',
-      title,
-      url,
-      foundAt,
-      startedAt,
-      duration: DateUtil.diff(foundAt, startedAt)
+      foundAt: new Date(),
+      startedAt
     }
+
+    return result
   }

@@ -1,23 +1,23 @@
 import { config } from 'dotenv'
-import { CookiesStorage } from 'Util'
-
 import puppeteer, { ElementHandle, Page } from 'puppeteer'
 import { stringify } from 'query-string'
+
 import { Content } from 'Database/Entities/Content'
+import { CookiesStorage } from 'Util'
 import { DateUtil } from 'Util/Date'
+
+import { ContentProvider, ProviderResult } from './ContentProvider'
 config()
 
-export const netflixSearch = async (
-  keyWork: string
-): Promise<Omit<Content, 'rating'>[]> => {
+export const netflixProvider: ContentProvider = async (keyword, headless) => {
   const startedAt = new Date()
 
-  const browser = await puppeteer.launch({ headless: false })
+  const browser = await puppeteer.launch({ headless })
 
   const page = await browser.newPage()
 
   const query = stringify({
-    q: keyWork
+    q: keyword
   })
 
   const cookies = await CookiesStorage.load('netflix')
@@ -77,40 +77,43 @@ const login = async (page: Page) => {
 }
 
 const getContent =
-  (startedAt: Date) =>
-  async (
-    container: ElementHandle<HTMLDivElement>
-  ): Promise<Omit<Content, 'rating'>> => {
-    const title = await container.$eval(
-      'p.fallback-text',
-      element => element?.textContent
-    )
+  (startedAt: Date) => async (container: ElementHandle<HTMLDivElement>) => {
+    const title =
+      (await container.$eval(
+        'p.fallback-text',
+        element => element?.textContent
+      )) || ''
 
     const imageUrl = await container.$eval(
       'img',
-      (element: HTMLImageElement) => element?.src
+      element => (element as HTMLImageElement)?.src
     )
 
     const holeUrl = await container.$eval(
       'img',
-      (element: HTMLImageElement) => element.closest('a')?.href
+      element => (element as HTMLImageElement).closest('a')?.href
     )
 
-    const url = holeUrl.split('?')[0]
+    const alternativeQuery = stringify({
+      q: title
+    })
+
+    const alternativeUrl = `https://www.netflix.com/search?${alternativeQuery}`
+
+    const url = holeUrl?.split('?')[0] || alternativeUrl
 
     const foundAt = new Date()
 
-    return {
-      image: {
-        url: imageUrl
+    const providerResult: ProviderResult = {
+      content: {
+        imageUrl,
+        provider: 'netflix',
+        title,
+        url
       },
-      title,
-      url,
-      provider: 'netflix',
       foundAt,
-      startedAt,
-      duration: DateUtil.diff(foundAt, startedAt)
+      startedAt
     }
-  }
 
-netflixSearch('stranger things').then(console.log)
+    return providerResult
+  }

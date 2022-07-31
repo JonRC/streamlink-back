@@ -3,7 +3,7 @@ import { stringify } from 'querystring'
 
 import { ContentProvider, ProviderResult } from './ContentProvider'
 
-export const globoplaySearch: ContentProvider = async (keyword, headless) => {
+export const globoplayProvider: ContentProvider = async (keyword, headless) => {
   const startedAt = new Date()
 
   const browser = await puppeteer.launch({ headless })
@@ -31,17 +31,11 @@ const getContent =
   (startedAt: Date) => async (result: ElementHandle<HTMLDivElement>) => {
     const imageUrl = await result.$eval(
       'img',
-      (img: unknown) => (img as HTMLImageElement).src
+      img => (img as HTMLImageElement).src
     )
 
-    const url = await result.$eval(
-      'a',
-      (a: unknown) => (a as HTMLAnchorElement).href
-    )
-    const title = await result.$eval(
-      'a',
-      (a: unknown) => (a as HTMLAnchorElement).title
-    )
+    const url = await result.$eval('a', a => (a as HTMLAnchorElement).href)
+    const title = await result.$eval('a', a => (a as HTMLAnchorElement).title)
 
     const foundAt = new Date()
 
@@ -58,5 +52,3 @@ const getContent =
 
     return providerResult
   }
-
-globoplaySearch('porta', false).then(console.log)

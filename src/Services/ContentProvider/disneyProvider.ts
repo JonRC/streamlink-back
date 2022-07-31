@@ -12,7 +12,7 @@ config()
 
 type Auth = { context: { token: string } }
 
-export const disneySearch: ContentProvider = (
+export const disneyProvider: ContentProvider = (
   keyword: string,
   headless = true
 ) =>
