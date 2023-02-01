@@ -1,14 +1,14 @@
-import puppeteer, { ElementHandle } from 'puppeteer'
+import { ElementHandle } from 'puppeteer'
 import { stringify } from 'querystring'
+import { v4 } from 'uuid'
 
 import { ContentProvider, ProviderResult } from './ContentProvider'
 
-export const globoplayProvider: ContentProvider = async (keyword, headless) => {
+export const globoplayProvider: ContentProvider = async ({
+  data: { keyword },
+  page
+}) => {
   const startedAt = new Date()
-
-  const browser = await puppeteer.launch({ headless })
-
-  const page = await browser.newPage()
 
   const query = stringify({ q: keyword })
 
@@ -18,29 +18,32 @@ export const globoplayProvider: ContentProvider = async (keyword, headless) => {
     page.waitForSelector('.search-results-widget__no-results')
   ])
 
-  const results = await page.$$<Element>('.playkit-slider__item')
+  const results = await page.$$('div.playkit-slider__item')
 
   const contents = await Promise.all(results.map(getContent(startedAt)))
-
-  await browser.close()
 
   return contents
 }
 
 const getContent =
   (startedAt: Date) => async (result: ElementHandle<HTMLDivElement>) => {
-    const imageUrl = await result.$eval(
-      'img',
-      img => (img as HTMLImageElement).src
-    )
+    const imageUrl = await result.$eval('img', img => img.src)
 
-    const url = await result.$eval('a', a => (a as HTMLAnchorElement).href)
-    const title = await result.$eval('a', a => (a as HTMLAnchorElement).title)
+    const url = await result.$eval('a', a => a.href)
+    const title = await result.$eval('a', a => a.title)
 
     const foundAt = new Date()
 
+    const contentIdRegex = new RegExp(
+      '\\/' + // match the last but one slash
+        '([\\w-]+)' + // match the content id
+        '\\/$' // match the last slash
+    )
+    const [, contentId] = url.match(contentIdRegex) || []
+
     const providerResult: ProviderResult = {
       content: {
+        id: contentId || `invalid-${v4()}`,
         imageUrl,
         provider: 'globoplay',
         title,

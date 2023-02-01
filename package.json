@@ -4,26 +4,37 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev -T src/index.ts",
+    "dev": "ts-node-dev -T --inspect -r tsconfig-paths/register src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node -r tsconfig-paths/register dist/index.js",
+    "gen": "graphql-codegen --config src/GraphQL/codegen.ts"
   },
   "dependencies": {
-    "@types/node": "^16.11.10",
+    "@apollo/server": "^4.3.2",
+    "@graphql-codegen/cli": "^2.16.4",
+    "@graphql-codegen/typescript": "^2.8.7",
+    "@graphql-codegen/typescript-resolvers": "^2.7.12",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^8.3.16",
+    "@types/node": "^18.11.18",
+    "@types/uuid": "^9.0.0",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "express-async-errors": "^3.1.1",
+    "graphql": "^16.6.0",
     "image-size": "^1.0.0",
     "moment": "^2.29.1",
-    "puppeteer": "^12.0.1",
+    "puppeteer": "^19.4.1",
+    "puppeteer-cluster": "^0.23.0",
     "query-string": "^7.0.1",
     "string-similarity": "^4.0.4",
     "ts-node": "^10.4.0",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.14.1",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

@@ -1,28 +1,27 @@
-import puppeteer, { ElementHandle } from 'puppeteer'
+import { ElementHandle } from 'puppeteer'
 
-import { Content } from 'Database/Entities/Content'
 import { CookiesStorage } from 'Util'
-import { DateUtil } from 'Util/Date'
 
 import { ContentProvider, ProviderResult } from './ContentProvider'
 
-export const hboProvider: ContentProvider = async (keyword, headless) => {
+export const hboProvider: ContentProvider = async ({
+  data: { keyword },
+  page
+}) => {
   const startedAt = new Date()
-
-  const browser = await puppeteer.launch({
-    headless
-  })
-
-  const page = await browser.newPage()
 
   const cookies = await CookiesStorage.load('hbo')
   await page.setCookie(...cookies)
 
   await page.goto('https://play.hbomax.com/search')
 
-  await page.waitForSelector('#textInput1210')
+  await page.waitForSelector('div[aria-label=Accept]')
 
-  await page.type('#textInput1210', keyword)
+  await page.click('div[aria-label=Accept]')
+
+  await page.waitForSelector('input[type=text]')
+
+  await page.type('input[type=text]', keyword)
 
   await page
     .waitForSelector('a[href*=urn][aria-label]', { timeout: 10000 })
@@ -31,13 +30,11 @@ export const hboProvider: ContentProvider = async (keyword, headless) => {
   const newCookies = await page.cookies()
   CookiesStorage.save('hbo', newCookies)
 
-  const containers = await page.$$<HTMLAnchorElement>(
-    'a[href*=urn][aria-label]'
+  const containers = await page.$$('a[href*=type][aria-label]')
+
+  const contents = await Promise.all(
+    containers.slice(0, 1).map(getContent(startedAt))
   )
-
-  const contents = await Promise.all(containers.map(getContent(startedAt)))
-
-  await browser.close()
 
   return contents
 }
@@ -55,6 +52,7 @@ const getContent =
 
     const result: ProviderResult = {
       content: {
+        id: contentId,
         imageUrl,
         provider: 'hbo',
         title,

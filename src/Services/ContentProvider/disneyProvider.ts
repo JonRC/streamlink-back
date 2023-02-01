@@ -12,44 +12,36 @@ config()
 
 type Auth = { context: { token: string } }
 
-export const disneyProvider: ContentProvider = (
-  keyword: string,
-  headless = true
-) =>
-  doDisneySearch(keyword, headless).catch(error => {
+export const disneyProvider: ContentProvider = (...input) =>
+  doDisneySearch(...input).catch(error => {
     onError(error)
     return []
   })
 
-const doDisneySearch: ContentProvider = async (keyword, headless) => {
+const doDisneySearch: ContentProvider = async ({ data, page }) => {
+  const { keyword } = data
   const startedAt = new Date()
-
-  const browser = await puppeteer.launch({
-    headless
-  })
-
-  const page = await browser.newPage()
 
   const cookies = await CookiesStorage.load('disney')
   await page.setCookie(...cookies)
   await LocalStorage.load('disney', page)
 
   const authJson = await getAuthJson(page)
-  await browser.close()
+  await page.close()
   const auth = JSON.parse(authJson) as Auth
 
   const { token } = auth.context
 
   const url = `https://disney.content.edge.bamgrid.com/svc/search/disney/version/5.1/region/BR/audience/k-false,l-false/maturity/1450/language/pt-BR/queryType/ge/pageSize/30/query/${keyword}`
 
-  const { data } = await axios.get<DisneySearch>(url, {
+  const { data: body } = await axios.get<DisneySearch>(url, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`
     }
   })
 
-  const { hits } = data.data.search
+  const { hits } = body.data.search
 
   const results = hits.map<ProviderResult>(hit => {
     const videoId = hit?.hit?.family?.encodedFamilyId
@@ -61,6 +53,7 @@ const doDisneySearch: ContentProvider = async (keyword, headless) => {
 
     const providerResult: ProviderResult = {
       content: {
+        id: videoId,
         imageUrl,
         provider: 'disney',
         title,
@@ -113,11 +106,11 @@ const login = async (page: Page) => {
 
   await page.waitForSelector('#email')
   await page.type('#email', login)
-  await page.click('button[type=submit]')
+  await page.click('button[value=submit]')
 
   await page.waitForSelector('#password')
   await page.type('#password', password)
-  await page.click('button[type=submit]')
+  await page.click('button[value=submit]')
 
   await page.waitForSelector('.profile-avatar-appear-done')
 

@@ -1,1496 +1,369 @@
 {
-  "bestContents": [
+  "duration": 2567,
+  "startedAt": "2023-01-20T21:11:08.676Z",
+  "finishedAt": "2023-01-20T21:11:11.243Z",
+  "keyword": "terror",
+  "results": [
     {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSRMHffe6dip9Os7aq_ia8yJk2aN3-lRSaDdBUc6WY-sBERNYpVFGWGkXcjwAw1NFXN9oOe2-zV6_v2PE0wChKyXD0amgDM4Ps3qizKNGxOLtq5H-8DS4Wn7iaTF.jpg?r=fcc"
-      ],
-      "title": "Black Mirror",
-      "url": "https://www.netflix.com/watch/70264888",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 1,
-        "keyword": "black mirror"
-      }
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/6b4f33540037273c009628de3d9434bd32c4bddd5ad6943f37a458a338f957c4._UR1920,1080_UX400_UY225_.png",
+        "provider": "prime",
+        "title": "O Mal Está Ao Seu Lado",
+        "url": "https://www.primevideo.com/detail/0K49JA77B01ZTMNRG4N9JMMV2X/ref=atv_sr_def_c_unkc_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B094DTLVFZ&qid=1674249069921",
+        "description": "Um grupo de amigos decide fazer um jogo de espíritos. Em um círculo formado por cem velas, eles devem escolher uma delas e contar uma história de terror. Conforme as chamas são apagadas, eventos estranhos começam a acontecer.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.717Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1053,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/0b6792c9bcd70006c74543db5acee3e49ee43a1aaf676fe5766ab095c1bf394d._UR1920,1080_UX400_UY225_.png",
+        "provider": "prime",
+        "title": "Amityville Terror II",
+        "url": "https://www.primevideo.com/detail/0RYGF7OM6NQXPYWD7F13YILT2N/ref=atv_sr_def_c_unkc_2_1_2?sr=1-2&pageTypeIdSource=ASIN&pageTypeId=B0986V8TVF&qid=1674249069921",
+        "description": "Todd e a família estão passando por momentos difíceis e resolvem ir morar na nova casa de Shae, em Amityville. Um lugar tranquilo que abriga um espírito maligno que se alimenta das almas dos moradores. É Hailey, uma adolescente rebelde, quem percebe que alguma coisa está muito errada, mas ela não imagina o que precisará ser feito pra isso acabar.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.717Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1053,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.36363636363636365
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/35f353af2a78dadb72a19d0c195ab6faa3221b5f17af399dc7b7ea6370987cb6._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "32 Malasana Street",
+        "url": "https://www.primevideo.com/detail/0QOMB5R1BIU008UQ0N6V1SXI41/ref=atv_sr_def_c_unkc_3_1_3?sr=1-3&pageTypeIdSource=ASIN&pageTypeId=B088MK1PYB&qid=1674249069921",
+        "description": "The Olmedo family leaves the town to enjoy the benefits that the big city may offer, but they couldn't imagine they won't be alone in the new home.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.717Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1053,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/2b13a77a74d2c2e85012a5e849c82ad7032b52d332737b75425b57f1c5b2876f._UR1920,1080_UX400_UY225_.png",
+        "provider": "prime",
+        "title": "Haunt",
+        "url": "https://www.primevideo.com/detail/0S3RUZ1WHPYBSPDKVX64CD1W0G/ref=atv_sr_def_c_unkc_4_1_4?sr=1-4&pageTypeIdSource=ASIN&pageTypeId=B08BN5V47Z&qid=1674249069921",
+        "description": "On Halloween, six friends encounter an extreme haunted house that promises to feed on their darkest fears. The night turns deadly as they discover that some monsters are real.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.717Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1053,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/c06884601f9080ef2f4e58a196da7be0a2c29920634b481525985bf4c9c3211d._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Castelo Maldito",
+        "url": "https://www.primevideo.com/detail/0O39U3U1IV4YI6EU4NL3JAH9MV/ref=atv_sr_def_c_unkc_5_1_5?sr=1-5&pageTypeIdSource=ASIN&pageTypeId=B09PTKT5DK&qid=1674249069921",
+        "description": "Um escritor de livros de terror se muda para um castelo com sua filha para começar seu próximo projeto. Mas o castelo é assombrado e consequências mortais aguardam quem se aventura por entre suas paredes.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.719Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1055,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.1111111111111111
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/682a0701bffb700699ea8b9450b23e7bbfe53d172b56431a798d7b59b368ee9e._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "O Hotel do Terror",
+        "url": "https://www.primevideo.com/detail/0N37GJWNCA41XJP652DMGQA0WP/ref=atv_sr_def_c_unkc_6_1_6?sr=1-6&pageTypeIdSource=ASIN&pageTypeId=B094KN7L4L&qid=1674249069921",
+        "description": "O fim de semana romântico de um casal à espera do primeiro bebê se transforma em terror, quando descobrem que sua pousada rural isolada é uma maternidade assombrada, onde bebês e mães foram assassinados.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.719Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1055,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.5555555555555556
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/9438c7a191258489ba78b014e16bd2b3b8ecfe4ee114b378278a83188a5f1694._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Terror Extremo",
+        "url": "https://www.primevideo.com/detail/0I1GRKLS8RVCBJX7FS9LJDKC3J/ref=atv_sr_def_c_unkc_7_1_7?sr=1-7&pageTypeIdSource=ASIN&pageTypeId=B08LZZDVMJ&qid=1674249069921",
+        "description": "Uma jornada psicológica inspirada na última mania – eventos de assombração extrema!",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.719Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1055,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.47058823529411764
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/98d976a08823b43aac465b4e0ed1ab450c336d001a013405dfe92a15535f29d7._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Terror em Shellmont",
+        "url": "https://www.primevideo.com/detail/0TA4PZEQ4ULJTKG5W079HLRAE4/ref=atv_sr_def_c_unkc_8_1_8?sr=1-8&pageTypeIdSource=ASIN&pageTypeId=B093RNLD5D&qid=1674249069921",
+        "description": "Um xerife de uma pequena cidade persegue um serial killer sádico que está atacando os moradores da cidade.terr",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.719Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1055,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.38095238095238093
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/5f1b0f619318be30d85032602f8d08cf2683087476aaff77d112ebc64013752e._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "De Férias com o Ex Brasil",
+        "url": "https://www.primevideo.com/detail/0QKDT1SWZWNTJNKC61420UDRHX/ref=atv_sr_def_c_unkc_9_1_9?sr=1-9&pageTypeIdSource=ASIN&pageTypeId=B0914QM1XJ&qid=1674249069921",
+        "description": "A deslumbrante casa em Ilhabela, vai ficar pequena para os solteiros mais cobiçados e comentados do país. O De Férias com o Ex Brasil - Celebs está de volta e promete muita curtição e algumas surpresas tramadas pelo Tablet do Terror.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.719Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1055,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/1b74862536686ee1b31c350284e4e60ed03a0f0224ef125d7dfafdde446e3426._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Terror no Halloween",
+        "url": "https://www.primevideo.com/detail/0MW7SM9NS5ECFSRPPAZT9Y8MHI/ref=atv_sr_def_c_unkc_10_1_10?sr=1-10&pageTypeIdSource=ASIN&pageTypeId=B0882RZ2VX&qid=1674249069921",
+        "description": "Depois que um garoto de quinze anos é brutalmente espancado por valentões do ensino médio, seu desejo de vingança desencadeia, sem saber, o Terror do Dia das Bruxas.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.38095238095238093
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/18fe9aaa2c7c3733b42de2206d0bf084ed6b4dd8832be211181972763f803ff4._UR1920,1080_UX400_UY225_.png",
+        "provider": "prime",
+        "title": "O Assobio do Mal",
+        "url": "https://www.primevideo.com/detail/0KRTWBEVHY60ZRW6QAUGW6IHGI/ref=atv_sr_def_c_unkc_11_1_11?sr=1-11&pageTypeIdSource=ASIN&pageTypeId=B097S7C4PX&qid=1674249069921",
+        "description": "Angel foi marcado por uma maldição. A morte de sua mãe num ritual de feitiçaria transformou-o num vigilante que comete atos sangrentos. Este terror é inspirado por lendas venezuelanas de um espírito que assobia antes de atacar.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/e66709d667321987b45ede63ca7fb19e0cc0d53947b10ccf7702af1ab5096f26._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Sombras do Terror",
+        "url": "https://www.primevideo.com/detail/0HYUTIRXFIRMZAVKVP7BMWB2Y4/ref=atv_sr_def_c_unkc_12_1_12?sr=1-12&pageTypeIdSource=ASIN&pageTypeId=B09D2Q98LJ&qid=1674249069921",
+        "description": "Um caçador é mordido por um vampiro e se isola num galpão. Na casa ao lado, mora um jovem desajustado e descobrir que um monstro é seu vizinho pode vir bem a calhar.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.42105263157894735
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/9609567c9ab12c8f54e46a5c5bbfb70401215b560eca9e99dbef6f7d51932818._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "The Terror",
+        "url": "https://www.primevideo.com/detail/0R5LQART2MFFBK75MSR4T8HIPV/ref=atv_sr_def_c_unkc_13_1_13?sr=1-13&pageTypeIdSource=ASIN&pageTypeId=B07BFHNMD4&qid=1674249069921",
+        "description": "Haunting, suspenseful and based on true events, The Terror centers on a perilous Arctic voyage by the British Royal Navy. It’s an extreme tale of survival in wholly unforgiving landscape - with the crew's fears exacerbated by an unknown threat.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.6153846153846154
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/7418304af3d9b7e0f8653926a82471f2f34f80ec724f52a4bdf2ad46dc35f3f5._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "O corredor do terror",
+        "url": "https://www.primevideo.com/detail/0J83M4FXOJ896VPGE8JXNUSGQK/ref=atv_sr_def_c_unkc_14_1_14?sr=1-14&pageTypeIdSource=ASIN&pageTypeId=B08WJ2P8QF&qid=1674249069921",
+        "description": "Um jovem estudante muda-se para um novo apartamento em busca de paz. Logo, os seus novos vizinhos começam a persegui-lo, com intenções sinistras.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.47619047619047616
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/0c629532b186f498d623e9fd62590ef3047cf70fe3546506540a3769aa276855._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Terror no Navio",
+        "url": "https://www.primevideo.com/detail/0M2DTO3XNBPPI72H5S4EL4XWEA/ref=atv_sr_def_c_unkc_15_1_15?sr=1-15&pageTypeIdSource=ASIN&pageTypeId=B08CNKXVCL&qid=1674249069921",
+        "description": "Presa a bordo do iate da família, Samantha vive seu inferno pessoal, ela acorda todas as manhãs e vê as cicatrizes deixadas em seu corpo da noite anterior. O mistério está apenas começando.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.47058823529411764
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/504f32efa0dc5ebcc0e8bbfb5f30a5cbe949c764feff554ec07ea4e0cb7df833._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Terror Profundo",
+        "url": "https://www.primevideo.com/detail/0T65PQG6K9AMC7G6R4PTY58J89/ref=atv_sr_def_c_unkc_16_1_16?sr=1-16&pageTypeIdSource=ASIN&pageTypeId=B08YCB75XK&qid=1674249069921",
+        "description": "Três amigos da Califórnia estão filmando uma fita de audição para um show de jogo de realidade extrema. Eles documentam sua viagem para a Austrália onde eles farão sua atividade mais perigosa... Mergulhar em uma gaiola de tubarões.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.4444444444444444
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/a665dcc79518da4de4ede99a8cfdb0ded00223d443f0eba48b3e719a9a37a0a5._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Terror na Ilha",
+        "url": "https://www.primevideo.com/detail/0SGJNK8P4Y5KL5W72828EFRDTJ/ref=atv_sr_def_c_unkc_17_1_17?sr=1-17&pageTypeIdSource=ASIN&pageTypeId=B082WMKR9Q&qid=1674249069921",
+        "description": "Três amigas de infância deixam de lado seus problemas pessoais e se reúnem para um fim de semana só de meninas em uma ilha remota na costa do Maine. No entanto, algo errado transforma o fim de semana em uma luta mortal pela sobrevivência.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.5
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/3250ed6190f92b95b0ff740a4b6bed4469725b3faccd704c24bd8519b9298b7a._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Contágio Em Alto Mar",
+        "url": "https://www.primevideo.com/detail/0G4T627UC35KFTHGM741CT8FKV/ref=atv_sr_def_c_unkc_18_1_18?sr=1-18&pageTypeIdSource=ASIN&pageTypeId=B09NSCTLM3&qid=1674249069921",
+        "description": "A tripulação de uma traineira do oeste da Irlanda, abandonada no mar, luta por suas vidas contra um parasita crescente em seu abastecimento de água.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/514767c463749b0390eb46874270d8b56e48efe29a7a95b747030b487ebd7cef._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "The Mummy",
+        "url": "https://www.primevideo.com/detail/0HX594ZVJYYRM1GCJURNZM4NY6/ref=atv_sr_def_c_unkc_19_1_19?sr=1-19&pageTypeIdSource=ASIN&pageTypeId=B07LCV9WMY&qid=1674249069921",
+        "description": "Thought safely entombed in a tomb deep beneath the unforgiving desert, an ancient princess (Sofia Boutella of Kingsman: The Secret Service and Star Trek Beyond) whose destiny was unjustly taken from her is awakened in our current day, bringing with her malevolence grown over millennia and terrors that defy human comprehension.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0
+    },
+    {
+      "content": {
+        "id": "",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/b78717d476c666c1163c7bd2bef1ffc183c536f9c224bf30d5d09d35b7a7808e._UR1920,1080_UX400_UY225_.jpg",
+        "provider": "prime",
+        "title": "Cidade Fantasma: Terror em Montana",
+        "url": "https://www.primevideo.com/detail/0K0SNPVS91Z0IRU4PJ11TW7EQ8/ref=atv_sr_def_c_unkc_20_1_20?sr=1-20&pageTypeIdSource=ASIN&pageTypeId=B0B6Q7NCH2&qid=1674249069921",
+        "description": "Quando uma família de Seattle se muda para uma cidade fantasma em Montana, eles rapidamente percebem que não estão sozinhos. Com medo de que a atividade paranormal atrapalhe os planos de operar um rancho de hóspedes, eles chamam Tim e Sapphire.",
+        "imageHeight": 225,
+        "imageWidth": 400
+      },
+      "foundAt": "2023-01-20T21:11:10.720Z",
+      "startedAt": "2023-01-20T21:11:09.664Z",
+      "contentId": "",
+      "duration": 1056,
+      "searchId": "c49cff75-0708-4745-8e19-e3ce60d65024",
+      "matchRate": 0.23529411764705882
     }
   ],
-  "contents": [
-    {
-      "pictures": [
-        "https://s2.glbimg.com/Wo71tC9_eNsM44Vneh-M18bN-FY=/362x536/https://s2.glbimg.com/rHkeFhIgBp4MZi6oJFNtXVkTrwk=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/q/7/0U7hPKTDinO8z2Xr0GMw/2020-851-black-box-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Black Box: Armadilhas da Mente",
-      "url": "https://globoplay.globo.com/black-box-armadilhas-da-mente/t/HzKJwjGgPw/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.22857142857142856,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSRMHffe6dip9Os7aq_ia8yJk2aN3-lRSaDdBUc6WY-sBERNYpVFGWGkXcjwAw1NFXN9oOe2-zV6_v2PE0wChKyXD0amgDM4Ps3qizKNGxOLtq5H-8DS4Wn7iaTF.jpg?r=fcc"
-      ],
-      "title": "Black Mirror",
-      "url": "https://www.netflix.com/watch/70264888",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 1,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/aed3ef6cf3a23590a421d0765d1ed1238cef16f4de02840efe7b00033ab2815a._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "From the Emmy-winning Greg Daniels (The Office, Parks & Rec) comes a hilarious new sci-fi comedy. In the future people can upload their consciousness to a luxurious digital afterlife. When party boy Nathan gets uploaded to a virtual resort he meets the down-to-earth Nora who starts as his customer service “angel”, but becomes so much more as she helps him find friendship, love and purpose.",
-      "title": "Upload",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0NQ1QFP6B4R6TM8O2590IV5716/ref=atv_sr_def_c_unkc_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0877DF19F&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.371Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/adNspvhzUHLqIRdkgkCWbt15V8E=/362x536/https://s2.glbimg.com/bPMTtMz3tvQyfjCWPr856-LOT64=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/k/k/nmNiXiR1KkOCJDxo1XDw/2021-38-sexta-black-poster-globoplay-1-.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Sexta Black",
-      "url": "https://globoplay.globo.com/sexta-black/t/KXmgXDsCpK/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.42105263157894735,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABR1mIQO3HHyjHgmxOHvaK7aO_konK_xrKMZELIue_EG-N5zY8v_nv07hku7dEA9zPs4eAYtWQ7YaN7WyMGv3-074a6LTTS9MoGxlFuXZ7FiV6CSugH0Yne-Ltvkhoxcc-ru1ztI1_waKTkvOkF1n8JxyRGooQXSnyWPmiJ_Se3wTj5UFnPjW3z0.jpg?r=d26"
-      ],
-      "title": "Black Mirror: Bandersnatch",
-      "url": "https://www.netflix.com/watch/80988062",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 0.6060606060606061,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/a147addebaf544b378e1aec7c01ea339826723db47d69470e3bd54e446937c34._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Uri guides six young tourists through the abandoned town where the families of the workers of Chernobyl nuclear plant use to live.",
-      "title": "Chernobyl Diaries",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0IV8KRJ8406BEV2UIQEN4SCWTW/ref=atv_sr_def_c_unkc_2_1_2?sr=1-2&pageTypeIdSource=ASIN&pageTypeId=B07H4VFDHF&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.371Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/butSxZCDehznB9vdpvGt3HkUENA=/362x536/https://s2.glbimg.com/azLPokJpVogoK-tz3uLM2aR4xow=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/o/k/d8TD1BQ9GaBCdQAjDjmQ/2020-1245-eles-nao-usam-black-tie-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Eles Não Usam Black-Tie",
-      "url": "https://globoplay.globo.com/eles-nao-usam-black-tie/t/nCzttxfSvD/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.27586206896551724,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQC1JY7P9GbinRKDRt3JwsenQv87EwcOXfQny9Mgagyw924kgI3KzqKtOgYNk1XL9hKl9GJ1jlieHpWgzXurA4UgnitxYNG3hL1kxEzE-6C6Z0Bo4BPSxPbTHXxy.jpg?r=f81"
-      ],
-      "title": "Love, Death & Robots",
-      "url": "https://www.netflix.com/watch/80174608",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 0.07692307692307693,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/35445d0311557bfa4a70aa6c5e68da7cb4869b587e192e89cfb007635a6c91af._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "A sci-fi anthology series with stand-alone episodes based on the works of Philip K. Dick.",
-      "title": "Philip K. Dick's Electric Dreams",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0TEKZVLTXDF4H8MD5N9RUHGO9H/ref=atv_sr_def_c_unkc_3_1_3?sr=1-3&pageTypeIdSource=ASIN&pageTypeId=B078WJCKNH&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.371Z",
-      "rating": {
-        "rate": 0.05405405405405406,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/mWelrAJOQj6Ks2gPlhTL16xyWYA=/362x536/https://s2.glbimg.com/V-rAmSFShXIvmgDLpsiUbARTdo0=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/8/x/ZbJvveQkWUPGAgcGV05Q/2020-amy-winehouse-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Amy Winehouse Back To Black: Classic Albums",
-      "url": "https://globoplay.globo.com/amy-winehouse-back-to-black-classic-albums/t/gGp1sdrx2r/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.17391304347826086,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfBpbEx-_UI1utdZg1et7cy1RHPJbsZnQZb3FLXCHRsIr40P_Awp0lY1Rezu6YN5kA3YzsNuwi_vLPAi2spMI3Lsi5umLzSI4bh9euSZEQyLQZJNuOwOn1piV9IV.jpg?r=3ab"
-      ],
-      "title": "The End of the F***ing World",
-      "url": "https://www.netflix.com/watch/80175722",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 0.0625,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/755889a3772560e3d7e96d581b4150e006ef011439f19ccb7748ad972dd5962b._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "O demônio de Natal está de volta e agora libera sua ira sobre os moradores de uma pequena cidade. Apenas uma jovem nada comum pode ser capaz de deter o Krampus. Ninguém está seguro!",
-      "title": "Krampus - O Acordo",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0KAF465PEPWMVRDXA36UL1WHJE/ref=atv_sr_def_c_unkc_4_1_4?sr=1-4&pageTypeIdSource=ASIN&pageTypeId=B07XNL4NB2&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.16666666666666666,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/aS8NEjkOWu7B8sU-wG63EgXpYUI=/362x536/https://s2.glbimg.com/ldDyPk3VvlqdNTl7-QTcMJ4BwFc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/s/h/1JR5gVSRCL55nAjOcwzg/2020-bowie-black-tie-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "David Bowie - Black Tie, White Noise",
-      "url": "https://globoplay.globo.com/david-bowie-black-tie-white-noise/t/LppTdWdrdm/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.20512820512820512,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTpCR8YGDediYhXcOIuU0xcSVxnsyvXv7LZztq4sB8QeN0IJLwz400Co4sjB_VhYoziLgjRUfBZC2RXR7KKdoeIcI7P2-P5M_wyOgUwMFBrVHHTNyntGPdh3Sreg.jpg?r=a13"
-      ],
-      "title": "Dark",
-      "url": "https://www.netflix.com/watch/80100172",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.269Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/1d89556ec3f03e57368051c0436e4a0c5f30bd7342a65e7f046ff9607be9990e._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "O que acontece quando seis sortudos estranhos, três rapazes bonitos e três mulheres bonitas e sensuais de todo o mundo ganham um concurso aleatório - uma viagem com todas as despesas pagas para uma incrível casa de praia na glamorosa Malibu, Califórnia, graças a uma grande Empresa de Internet - apenas para descobrir que eles têm que compartilhá-lo uns com os outros.",
-      "title": "American Beach House (Portuguese audio)",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0TRDQ1Y03A2YAZ86UIFMFC67HW/ref=atv_sr_def_c_unkc_5_1_5?sr=1-5&pageTypeIdSource=ASIN&pageTypeId=B07BPH6CF4&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.09090909090909091,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/SxF94dHV0HSJV7ogK6YwFRoaGgI=/362x536/https://s2.glbimg.com/JixejibJxL2yTqLwBgfibdTZc0c=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/s/n/aPBxIiStW76snztVTvxw/2020-989-blm-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Black Lives Matter - O Movimento Negro Hoje",
-      "url": "https://globoplay.globo.com/black-lives-matter-o-movimento-negro-hoje/t/HbwNxDDkby/",
-      "foundAt": "2021-12-18T16:34:25.129Z",
-      "rating": {
-        "rate": 0.2222222222222222,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTAUONuEfq7Yndi9WZNW-DkkVXL6fDOp9GY9k7YRExK6QL4PbJqA7rZ65fO5FdNbsLNbY0Xjy6c4QPbiyoZQ7lLL0DU.webp?r=7ce"
-      ],
-      "title": "Rick and Morty",
-      "url": "https://www.netflix.com/watch/80014749",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.269Z",
-      "rating": {
-        "rate": 0.19047619047619047,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/511a3647081a388f10532f6a3b264768dde401e44bd5f8eb982e0e995a72d4a7._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "anet Slate (Julianne Michelle) tem 24 anos e decide se mudar para um pequeno apartamento na cidade, sem saber que não viverá sozinha. Aos poucos, começa a experimentar eventos sobrenaturais que a levarão até a morte.",
-      "title": "1303 - Apartamento do Mal",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0H7KGWM5JL4GXK6N6MIGAZK5CY/ref=atv_sr_def_c_unkc_6_1_6?sr=1-6&pageTypeIdSource=ASIN&pageTypeId=B07KRWP9YY&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/KxXBQZfCubkJmOL70FKM-y_6XDY=/362x536/https://s2.glbimg.com/O4OHA51Pbl52q0RTfwp0936l9Xw=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/4/y/DyMAZWTh6vIAUldWUPkg/2021-1989-ninjago-diada-despedida-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Ninjago: Dia da Despedida",
-      "url": "https://globoplay.globo.com/ninjago-dia-da-despedida/t/LYFR7ptF1F/",
-      "foundAt": "2021-12-18T16:34:25.129Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfAbeVSPHu-Fxh5b9HVb0o4F-oS3uCJwpMAVbz9gvSWrhbyKdRMfiULWUlAUbU20Ygf-SXWU55dkmAKZVrXaI2tVNOW4XJZWSY4_v3VLF-wV3MxbljpveOF2Jrbg.jpg?r=38e"
-      ],
-      "title": "Explicando - A Mente",
-      "url": "https://www.netflix.com/watch/81098586",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.269Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/bf55c4f8ca6f3ea9f8ee1bd2ddaca3a3ba3bda5bf15e9737bd50091b07de93f5._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Film students break into an abandoned insane asylum to do paranormal research and quickly discover ghosts are real.",
-      "title": "Grave Encounters 2",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0P55FA4STQOXH6K2WNMCS8OEAY/ref=atv_sr_def_c_unkc_7_1_7?sr=1-7&pageTypeIdSource=ASIN&pageTypeId=B07FR4F8V1&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/xX7mjoDh2MuoOQwOBcGebBbS3Jw=/362x536/https://s2.glbimg.com/SBVCDoiH8cRjLP0IGC03GzZe6Lc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/B/6/FwHsyJRrGxZ2BSBLo5zA/2020-823-the-blacklist-red-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "The Blacklist: Redenção",
-      "url": "https://globoplay.globo.com/the-blacklist-redencao/t/P6rNK8HLXf/",
-      "foundAt": "2021-12-18T16:34:25.129Z",
-      "rating": {
-        "rate": 0.26666666666666666,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVDivwxFIqwL_j1qDltG6wsY0ijRFdMYta7HmDZJ8MTpj4ybog22QEHi1nfrC17Z05aUrP_252fmoWIp9-gmL8PYX6JS6IOM_kTqGcjWuOOVm_9JIx39tMw7iINq.jpg?r=c00"
-      ],
-      "title": "Arcane",
-      "url": "https://www.netflix.com/watch/81435684",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.269Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/2a4fc555bdc0739b16d35b15ba5ed315b4cb93352bd7e80362f7d53d4317017d._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Combining romance, drama, fantasy and mystery, Benjamin Button chronicles an odd romance that sparks between a 30-year-old woman (Academy Award winner Cate Blanchett - The Aviator) and a man (Brad Pitt - Troy) who, at 50, begins aging backwards.",
-      "title": "The Curious Case of Benjamin Button",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0PHYQBWRB7A1F6IVZBWN4H395W/ref=atv_sr_def_c_unkc_8_1_8?sr=1-8&pageTypeIdSource=ASIN&pageTypeId=B07SHJD6K3&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.05128205128205128,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/Huy8MHMRfiCDaQlajvzUc3EuO-g=/362x536/https://s2.glbimg.com/49MYNlSz3zVa8o5aFeNCRmm9kmE=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/J/L/R5lApAT5aOjIrr3zs9CQ/2020-924-vitoria-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Vitória: A Vida de uma Rainha",
-      "url": "https://globoplay.globo.com/vitoria-a-vida-de-uma-rainha/t/MKVWGGXsQP/",
-      "foundAt": "2021-12-18T16:34:25.131Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW9jzAyT4dZxf7nXbcZDP75cAwrxETcRHHr78N3swfUS9zAlgPJdR-o9eKYKZSGuS7BwmWyUVbv_OS0spBeAa9I7cIaJ0PbrdHchzASCgNHE_3VrLYcZvHnbj1_f.jpg?r=274"
-      ],
-      "title": "Departamento de Conspirações",
-      "url": "https://www.netflix.com/watch/80995819",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.05714285714285714,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/655cda35ca5aeae7c6578e6a0dc7cbf6246bbdf48b6528e9ba37a879386153dd._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Épico biográfico do controverso e influente líder nacionalista negro, desde o início de sua carreira e carreira de gângster, até seu ministério como membro da Nação do Islã.",
-      "title": "Malcolm X",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0U8HOWE2IVLCW9ZTSF399UY4MA/ref=atv_sr_def_c_unkc_9_1_9?sr=1-9&pageTypeIdSource=ASIN&pageTypeId=B085Q1YSJK&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/qQubOvsBsOeekbq9se17w4CMkFI=/362x536/https://s2.glbimg.com/NoyC6SpifIC7MEHNS2GBEib5c_Q=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/m/W/VwAxm8S9GGWZbOzHa5Bw/2020-913-kung-fu-panda-3-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Kung Fu Panda 3",
-      "url": "https://globoplay.globo.com/kung-fu-panda-3/t/S9JHWjJmMg/",
-      "foundAt": "2021-12-18T16:34:25.143Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQHjEVqXqezqXmt_Rhl8LUV9gRdOUC6f4rFlK45npDZgXdclfsr6IRzEu_7PEFTuxlOiFC7AZv7MgiGbtF5ZHzjPVghVSpUTxcIEUg9FJvl0Ab4WTicb5hSIk16s.jpg?r=81f"
-      ],
-      "title": "O Poço",
-      "url": "https://www.netflix.com/watch/81128579",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/579ec7eaf707801339540e04b3e7037405cebf7ab08aa29fa96e4a8e4298126f._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace.[Showcase Channel]",
-      "title": "Valerian & the City of a Thousand Planets",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0HOL9E23YF0GK2JX3QNP77MGUU/ref=atv_sr_def_c_unkc_10_1_10?sr=1-10&pageTypeIdSource=ASIN&pageTypeId=B078H3TQCW&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.046511627906976744,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/f7K1PcPkUPR5nUoF7VdtdP_yc1I=/362x536/https://s2.glbimg.com/GAzi-1CNj5QBjET5JNZnNDeFrYI=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/r/x/w43ghAS6GBRvW5Njbl1g/2020-1177-remembering-whitney-poster-1-.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Remembering Whitney",
-      "url": "https://globoplay.globo.com/remembering-whitney/t/CQhfYF8kfX/",
-      "foundAt": "2021-12-18T16:34:25.143Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdfDfovit0hrg8tVmhEZ-wwYRkJboQLdQ-T7B50slnuxeXs_ZTTZuezu_cYg0tJX5BLvcY8sp3LytE4wkUaRNQGcoAJ5q1mZsNENE4MbOrilVwTMTWyL8pvsY1o4.jpg?r=4ea"
-      ],
-      "title": "O Gambito da Rainha",
-      "url": "https://www.netflix.com/watch/80234304",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/2bd8f5b6b2c7dcdf559c66b0a01dd64d39739e8ea3d161cf3f0d1f21f066ee33._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Freshman Charlie is a loner until he falls under the spell of the free-spirited Sam and her fearless stepbrother, Patrick, in this adaptation of Stephen Chbosky's best-selling novel.",
-      "title": "The Perks of Being a Wallflower",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0RQXBYJZIKMHEXZGIFJRLO5TCC/ref=atv_sr_def_c_unkc_11_1_11?sr=1-11&pageTypeIdSource=ASIN&pageTypeId=B07F7Q4XTZ&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/PJebKJaJhmzXdBcJCavHtqhF7YI=/362x536/https://s2.glbimg.com/UWpbxkq0bdb-9TbPgIE93iYibY4=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/l/3/wWod8AQzWEL7uNuApAAg/2021-1809-jurassicworld-theindominus-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Jurassic World - A Fuga do Indominous Rex",
-      "url": "https://globoplay.globo.com/jurassic-world-a-fuga-do-indominous-rex/t/qfVxJdqfvf/",
-      "foundAt": "2021-12-18T16:34:25.144Z",
-      "rating": {
-        "rate": 0.09302325581395349,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABc7Sdp7M2MLSZLzsTDlOYFm82-v_IXYv_YxxpqpumsZ79pmC-oiE4i9R089Qf8Dg-V0843jG3haoVd-GwUFJ_uEd5uc.webp?r=1ff"
-      ],
-      "title": "Ex_Machina - Instinto Artificial",
-      "url": "https://www.netflix.com/watch/80023689",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.05263157894736842,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ca937736d42a41a94247a38c3417adfd32c8a5519d60367dbb61068e4e65dc4d._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "After being locked behind sacred glass in the Warren's artifacts room, Annabelle awakens the evil spirits in the room, who set their sights on the Warrens’ daughter and her friends.",
-      "title": "Annabelle Comes Home",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0N0H2EL7ZDU2U5XGA220OI2C0L/ref=atv_sr_def_c_unkc_12_1_12?sr=1-12&pageTypeIdSource=ASIN&pageTypeId=B085KMQB6X&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/iJvHztSy1lfB7Lfsd_cv9hysyPM=/362x536/https://s2.glbimg.com/AP_slcCqFaB1yffr1udxvhyZ_Ck=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/e/A/X0C6JhS5C18MXMjbBBXA/2021-the-blackboard-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "The Blackboard",
-      "url": "https://globoplay.globo.com/the-blackboard/t/F6XwDPWtqx/",
-      "foundAt": "2021-12-18T16:34:25.144Z",
-      "rating": {
-        "rate": 0.36363636363636365,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWGdwn3XBLXGrcH5Md0S2plL5UrxBiO--koSjF1n9zlVqRqmKYFf40iglrFadjEKW2yozzMHzkhwRqgDOQOYZ2FTPVH109GkUIl_AYCsLqj_MPtqWmeixcEZG1Tp.jpg?r=ae1"
-      ],
-      "title": "Você",
-      "url": "https://www.netflix.com/watch/80211991",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7414a0a168e38793b900bf7c853528b1a21668e25f6e14be78b80213857cdadf._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "In this comedy, Kirk, an average guy, can’t believe his luck when the successful and gorgeous babe Molly falls for him. His smart-ass friends, his crazy family, and even his obnoxious ex-girlfriend are just as shocked as he is.",
-      "title": "She's Out of My League",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0J7YVDDTWLL8IAWF1QU1BU5VTS/ref=atv_sr_def_c_unkc_13_1_13?sr=1-13&pageTypeIdSource=ASIN&pageTypeId=B01M4MH085&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/BEc2gCG_lfxMKIe7aWQThhZpey4=/362x536/https://s2.glbimg.com/csP-r74_8oKPv2PmIr-WUwM_B7Q=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/X/W/DAtI7pQhePgTfZo6wc8A/2020-mythica-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Mythica",
-      "url": "https://globoplay.globo.com/mythica/t/M1PyHdM6S5/",
-      "foundAt": "2021-12-18T16:34:25.168Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXSZ1g4KlP5VvJrdL_xZaEk9xCtks-NdL6MoDfSODhugKGNuI2FlZUFyzHpiZdwBOQVoGQwqCR2QJlOH4Uyq7PQxK5mGukpqnZVJokI-g9HwKRLrPpXmz1llLyC9.jpg?r=2c4"
-      ],
-      "title": "Como vender drogas online (rápido)",
-      "url": "https://www.netflix.com/watch/80218448",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.05128205128205128,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/73d59f9d7313ffe4f94c55602f4cc3008ee639d285b038bcdd3325a8897da619._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Uma morte ocorre acidentalmente no ringue e Boyka passa a questionar tudo aquilo em que acredita. Ao descobrir que a mulher do homem morto está em apuros, Bokya faz de tudo para ajudá-la.",
-      "title": "Boyka: O Imbatível",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0TN65OTX8I5EIASC3NMYGWGW1G/ref=atv_sr_def_c_unkc_14_1_14?sr=1-14&pageTypeIdSource=ASIN&pageTypeId=B082LYBH7S&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/VggVzaA458OwU5PenKldQBcbQq8=/362x536/https://s2.glbimg.com/psIrbpT4DKb1VY-1CyeBiUCdxD0=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/D/c/E9m9pfQde2vP7ebtzE3g/2021-1903-jumanji-bem-vindo-selva-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Jumanji: Bem-Vindo À Selva",
-      "url": "https://globoplay.globo.com/jumanji-bem-vindo-a-selva/t/ZFbvdQBscq/",
-      "foundAt": "2021-12-18T16:34:25.168Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABegkwVeQ6Cosbt12uJdnNW8KaOyQbD8bwNKGE7WWCzsMW0wmsZxVCBwMD81Id5ZMNfg2k68ZBfEM5TuYuTUZmjamodPWMNpLq94k5ddrb1itCfB0Q8mPXeqfajpe.jpg?r=2de"
-      ],
-      "title": "Como Se Tornar um Tirano",
-      "url": "https://www.netflix.com/watch/80989772",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.13793103448275862,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/fa2027db1cf49d1801cf995e7ff36224c2f6d84b7711c9fed40e8ab754748564._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Depression-era bank robber John Dillinger's (Johnny Depp) charm and audacity endear him to much of America's downtrodden public, but he's also a thorn in the side of J. Edgar Hoover (Billy Crudup) and the fledgling FBI. Desperate to capture the elusive outlaw, Hoover makes Dillinger his first Public Enemy Number One and assigns his top agent, Melvin Purvis (Christian Bale), the task of bringing hi",
-      "title": "Public Enemies",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0S7X9F2ZNHR7121BPAHZIUZ3YB/ref=atv_sr_def_c_unkc_15_1_15?sr=1-15&pageTypeIdSource=ASIN&pageTypeId=B01M6Y7V9U&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.18181818181818182,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/dWQq8IMgkCbhIQqsI4A0VslQK_E=/362x536/https://s2.glbimg.com/3P0k64m1wPQ_updkvm5DpQnOoFA=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/d/Q/2y7ltjTzKXVYPxB8KmAg/2021-2205-king-kong-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "King Kong",
-      "url": "https://globoplay.globo.com/king-kong/t/KjQgQTFHrB/",
-      "foundAt": "2021-12-18T16:34:25.168Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa2FsWgprubB3bNLBm08zCk2MCfgeuZUE_12gbFMdojlW4xVL4Ak46KYS3OeSVEmVS85zdCmU41-ZaoqRZ94KGYcrlkCWwyM6dSIGO_0M9278WnLbieZkddPBRXI.jpg?r=678"
-      ],
-      "title": "The Midnight Gospel",
-      "url": "https://www.netflix.com/watch/80987903",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.07692307692307693,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/e371bff370bd8969d6c3cafe7166af7a527ae98dbf65137a1c3ef24b4718b524._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "A workaholic woman gets out of the office late on Christmas Eve - what a time to discover that the parking garage attendant is a psycho who's got every escape route covered! A superior, violent thriller!",
-      "title": "P2",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0FFM8LDQEINCHDV6IN7IOIZXWY/ref=atv_sr_def_c_unkc_16_1_16?sr=1-16&pageTypeIdSource=ASIN&pageTypeId=B07F3HB919&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/zly9rWaUKKrcZS5_6clBa4W34Xg=/362x536/https://s2.glbimg.com/Cj7WsoejO76o_FHjVnxf8ivEhFg=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/j/i/5qDB6lTsun9sjAW9muIg/2020-816-bernie-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Quase Um Anjo",
-      "url": "https://globoplay.globo.com/quase-um-anjo/t/ZTbG7p5cyx/",
-      "foundAt": "2021-12-18T16:34:25.168Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRNnxvVHf0vOfqcSF2OdbBEJuEcURz5JbBF6_j3aou7bgap1pl1-a93g9wtxfNMxGf-qJyWkis1TVciXkvmOsK5K0hs.webp?r=32c"
-      ],
-      "title": "Efeito borboleta",
-      "url": "https://www.netflix.com/watch/60033299",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.08333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c8c7185aa79b45132dd6b188bd186f4c489f24066eff6c3195fd072e55171005._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "An agent newly retired from the CIA (Scott Glenn) agrees to become an Italian businessman's bodyguard in this adventure film. Things fall apart though, when terrorists kidnap the Italian'...",
-      "title": "Man On Fire",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0OWLQ7DOBLNCULIU5LAZTXBXUI/ref=atv_sr_def_c_unkc_17_1_17?sr=1-17&pageTypeIdSource=ASIN&pageTypeId=B0771KX4KD&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.378Z",
-      "rating": {
-        "rate": 0.1111111111111111,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/5X65VQGUYnkfcI4XSmBKsnBdPcY=/362x536/https://s2.glbimg.com/cj0MUEQO4halKEpyIEA6WMsRABc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/c/Z/TIeABTQfOtATLikgLDqA/2020-1184-avisem-que-estamos-chegando-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Avisem Que Estamos Chegando",
-      "url": "https://globoplay.globo.com/avisem-que-estamos-chegando/t/WQcKzV9vVh/",
-      "foundAt": "2021-12-18T16:34:25.175Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUjsKDiaKwLmrV662pwmVKEtRmbJI-s8M9ojCqr2QEdnPUJPX86RP-n9IGXxGcaHWkTf-cwz5e4kBLN3jYLM7HuBfYA.webp?r=01d"
-      ],
-      "title": "Breaking Bad",
-      "url": "https://www.netflix.com/watch/70143836",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/3744fc87334042f3b61539f304d342c691060106eb18e5708b0f69644505199f._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "A recently released ex-con and his adopted younger brother are forced to go on the run. Chased by a vengeful criminal, the feds and a cadre of otherworldly soldiers, their only protection is a found weapon of mysterious ancestry.",
-      "title": "KIN",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0PQHC32YOP3HU0D1JEQLXTD8UG/ref=atv_sr_def_c_unkc_18_1_18?sr=1-18&pageTypeIdSource=ASIN&pageTypeId=B07P24S87B&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.378Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWPxYAYMFr5SxfipPSR2amTR97nEq9m6_bOvNtXoO-GGBQ8oxNgs7Y6QaR-rszLKQdcn93tfA4OIxo4feuNBjXLx2Xwew34YwcpMmrl956RNE7COoGYxO3BZZhZ3.jpg?r=d4e"
-      ],
-      "title": "Explicando... Dinheiro",
-      "url": "https://www.netflix.com/watch/81345769",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.13333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/e5b5ac551cc6b8b098e3d4be82af22d14ca30f4a6466b75742df084ea7564970._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "A tough detective (Denzel Washington) matches wits with a cunning bank robber (Clive Owen), as a tense hostage crisis is unfolding. Into the volatile situation comes a woman named Madaline (Jodie Foster), a mysterious power broker who has a hidden agenda and threatens to push a tense situation past the breaking point.",
-      "title": "Inside Man",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0MW5SKN7AUSCLEV9P4UUCKGPPU/ref=atv_sr_def_c_unkc_19_1_19?sr=1-19&pageTypeIdSource=ASIN&pageTypeId=B07FDQJ3FJ&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.378Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa6MswfSIfB0tDYvLUa3eQwIzHDWwDqNqOTN9xAHoMuRm3MKFNW71mFTYRnogi1-nnXZ0COl9GngBWJQLAhEh03HvBpvoUzxx4dsUvrdM196o5M_t9G4r4tIB1UN.jpg?r=525"
-      ],
-      "title": "Altered Carbon",
-      "url": "https://www.netflix.com/watch/80097140",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6d1338641329e8473928e0adcf1fad76573b3ddb1effe0f931560d588d9bd143._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "An alcoholic surgeon loses a patient on his operating table abd tries to expiate his guilt by forming a relation with the deceased's son.",
-      "title": "The Killing of a Sacred Deer",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0S3PB5DUK1GJTPTTELPTYIC8MD/ref=atv_sr_def_c_unkc_20_1_20?sr=1-20&pageTypeIdSource=ASIN&pageTypeId=B07B41QGGH&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.378Z",
-      "rating": {
-        "rate": 0.0625,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYYkdM1XEqnCIExiNmhRCs5pKGaj0DlZ6Jh6M76XzUwuzz_Qe5_w81fn3zH0_Ch41CgjidXGwPwRntHGvM9arQdLRTJOZl1WaoElGF0odXCH1ZFGxvBJRpOfcBBZXwRrZpFRV8NZSTj9r4j-U2cJ0DjFfpA6s-qYNyor5ktfRDvjMWtM_Uhg6ZUrBhEac3My51ABHCaxv6Vw0fFnAePz0b5W.jpg?r=4c4"
-      ],
-      "title": "La casa de papel",
-      "url": "https://www.netflix.com/watch/80192098",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.18181818181818182,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSZ2SKkV3ZDkwIL1dH1S7s_4lQGeUrBBj0UjYGb3DNRMMT2rrH2VMnupi_CZ5gcX6HRxuAcZiLJisXmpvZ9mVAWFiFF1JdmzevIeS7a2SvCQyzD-IdgwgNhrUOxrwqRWSZHwqdM72rudoRFyFtDWZHfKesEfWXhrUip6tOqtaiyO0eNYRn4NTrU.jpg?r=2f8"
-      ],
-      "title": "Você Radical",
-      "url": "https://www.netflix.com/watch/80227574",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ8Opt6hwErnGBcWHCOjpp-zdnoYLhpcbz4oqTxpGb_G0RTBDsYSj-jg3RsNswKlHcj-QGNNQEN2CInLa1v974iUxzeSREUYtwDw9Z6mzctQFTzBj-Cx2bDQdEOX.jpg?r=e4e"
-      ],
-      "title": "Sense8",
-      "url": "https://www.netflix.com/watch/80025744",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSkqL8Sd8ybN_jX8d34L4RMgWDs9yd9tL5U7qVZT4C7wx8lT6RLvUWOwet7a3xokGdfEPJuaKj7dK-w-OFnk2WSXAlM.webp?r=897"
-      ],
-      "title": "Modern Family",
-      "url": "https://www.netflix.com/watch/70143858",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.09523809523809523,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaRVktj0hFRmMXNY2YH_UHlZ_koNFFj1vAYuDE52rP-C-tq8Gcp7KQdoZVOQRUTHZbCj-ZgUVip8S-A3NhR3IZtQKpA.webp?r=e34"
-      ],
-      "title": "Brooklyn Nine-Nine",
-      "url": "https://www.netflix.com/watch/70281562",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.07692307692307693,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSffab-b48tj8APEpXWge2vUMcJyRCujRjILeBBjTuOrntJ1-0pMcWrW9zT2ugOZEbrBtC7WtnMz5jrqDRsnrWIsrg7cBSyNckVVJM4bN2ZfGM5jFhCf1szTA43P.jpg?r=155"
-      ],
-      "title": "Peaky Blinders: Sangue, Apostas e Navalhas",
-      "url": "https://www.netflix.com/watch/80002479",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.043478260869565216,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe00Ks8ZBaltz57eIXR2sFrSG4pFDcun3B_c2YBqbSRaRJgYgp0qsIO8kYphjxcHj6brpoS0X_Bz4wFIQuBgf7gRhDfg_-rEZHABy_xchQeaEtUOFMM08xJb9WkeL4aLw1eaCydwVD5uKVhoMkZTbMh2B2LNJzazQ8TsfZxIiq0o98h_xLC31JdPH2lTz5y82XlOZsv-brRrRqmmwnGAIUC0.jpg?r=c3c"
-      ],
-      "title": "The Witcher",
-      "url": "https://www.netflix.com/watch/80189685",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVa1VgqYgwrJBYgpuXO3iChzjWRTnLqgU0alWvuSFPpGtae73nbUrOk6-0_SkZeaJPIp9rl0I15yWc0aW3VNcePXEkXDimX4qXqeJh2bmJRwoc1FqBnSpihcIm3T.jpg?r=c29"
-      ],
-      "title": "Explicando",
-      "url": "https://www.netflix.com/watch/80216752",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaXm1fTR2xkOl8HKwD8G2dQSumeJ7IDnfipt8lIRDDvIUhiQJFxm716tIs9EntGKoj08qARWLLddsUT92x4BE7NIwVQ.webp?r=729"
-      ],
-      "title": "A Chegada",
-      "url": "https://www.netflix.com/watch/80117799",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.11764705882352941,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaGha2PfvPaJo-TmOsdw5FIJNskNMcmotlwB3ga7cq8o8z6Yn3iIkZl_9ipIpZ3EERZEqAI-h2oKyGrf_xlS8qzSTbM.webp?r=564"
-      ],
-      "title": "Oats Studios",
-      "url": "https://www.netflix.com/watch/81483047",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdHfQmkhe0AjG7HSwciXufDNYmo4puNBz0Ul8ChRHf5phYeISYfm-RGgc4R6h_r29w3Of1HCi3smqmwjU3So19cmmpnMUBPq-zlgDmDqG21B-b1YvziLl1gyrCsxlTrDUesKghJrYlGjnf7k2HtV6DfYzS5e7iGazUasNZCTbjGcA_ai-Z-jgXwNsiPvS89_Eeh-H0SjsrnQ1UQEJOtw7K2x.jpg?r=e56"
-      ],
-      "title": "Você Radical - Safári",
-      "url": "https://www.netflix.com/watch/81205737",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdsyasFJmH8i-CYvab6FAhNbCTjurUaI75G3Kk4QWJuEXEfjBh_pajBKQ21MMqzIdbnXqrzug7pDSRX5XhgZ53eJ32g.webp?r=677"
-      ],
-      "title": "Passageiros",
-      "url": "https://www.netflix.com/watch/80117456",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.2,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfuN-1_qwmhpDYjRjVt-TSDUK8GH46XsLhCLN-cXiPBZ7aF7prm_LxbeViMXDHcm-8ubp8aJq0iOr141p0R5X2lP7HHIUP10tWl7mDDCwEaaMI-86TDz_7Op6k7q.jpg?r=daf"
-      ],
-      "title": "Round 6",
-      "url": "https://www.netflix.com/watch/81040344",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.13333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcZS0pFQ_XhzZ4xE_7f2jSlAG5DYr0YpncMToLe_b0a9Bj9y53pnBUpL7MZUUe7rpcp718xeLMedbxeaOdGmdoNLVFIoDK5-9CQ6XySUKbfhkZ6duh7xtx7C3EV7.jpg?r=51b"
-      ],
-      "title": "A Vida em Outros Planetas",
-      "url": "https://www.netflix.com/watch/80221410",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.13333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS6xG_qu4UATpEtwqfoq8RNNrhQo_9_W7Ayuq4EacG1dQu-GiHIcxZ5pRkDmEQidcwpksGmDiRIzAB0r9DHcy8KYAFKMtJKHuAaXtHgf1S8Yu7-mCYzfeGRGCtJB.jpg?r=b96"
-      ],
-      "title": "Stranger Things",
-      "url": "https://www.netflix.com/watch/80057281",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRAzapJ4LKot1c3Rhbqi-zh6VPy-mO-mqAnv9cTAVXTQ-s2lbM_gmy6Gjb5z9TNdxWVqIhhodRuUMJV0khdD1V0xJvz_F74CrFon2EBn6yTnrQ3D1hs6EwRL0XzU.jpg?r=14d"
-      ],
-      "title": "BoJack Horseman",
-      "url": "https://www.netflix.com/watch/70300800",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.2608695652173913,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe2cuMWXauQh3C7ddBWrt0-I1Wv_P6qwsh-pWPB55wedpyhdEn4gNSUnaOKKmTDBUTu9HUKe9G0wGgnTvm-aA_CJq9fQQVr-GqGXtTteONLQboqEiLhk436ELLkh.jpg?r=39b"
-      ],
-      "title": "Garota de Fora",
-      "url": "https://www.netflix.com/watch/80241947",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.19047619047619047,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaVI75OcSnDQ4_JmGMvplfsIReU7YabAjgbnYSUjzYQe_x7eci1cqtlAW-YpANKuezHURgfEbTLP6jbtlrDw1OJYeE2FiJuwy2G9FllV54H9LdrqqoJDrULwQhim6Fyl-UIlU3Yfnqn1Wb7Umr19CbYPmgMMyQ.jpg?r=247"
-      ],
-      "title": "Perdidos no Espaço",
-      "url": "https://www.netflix.com/watch/80104198",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXwTDAXLV1lOK9h-ZXKMaE09v6dmdxZjpDIYl_Q5MqEbY4QBxVtNT-sA1y2c4RaZ1dFIHvpawK3mpLA7tdmqNmtjKAzin60FO2m_gZ0FHfR6tb9D1FZJlzx9CkcRcWAFLYU-mE0ccwAgvzMlQ3szKq-aYXzwHWmxdBwDXVFJJQZ5eArC126KBYcZ1Yf1Y5f5ntl4WKUmFDECHzbsW1t5Sps7.jpg?r=da6"
-      ],
-      "title": "O Chefinho – Pega Esse Bebê!",
-      "url": "https://www.netflix.com/watch/81054409",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYGVlOCe_4m7YrB8zCxfVgPLeLWPuCnHvJ9beWzBc7f0UoHaXOXhi0j2CuLfIN5SrdX3F_8bzH-78WhtNnj007NDPh0GLuetRxpIyEFz-EY1j8wXz5d6zAUPGHl_.jpg?r=ecf"
-      ],
-      "title": "Sex Education",
-      "url": "https://www.netflix.com/watch/80197526",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQFVX9YeOK6W1nJCuluKtwXB-q8HBhlNzdO7ENs4gBEZG544_QfvHwZ4GVr6iYk5ZW7nxkT6r0mGrMjhT7eBVujHiAN_GVJ0x6z2W70HCyb84Ck4tE84xhdqQuZ1.jpg?r=6a0"
-      ],
-      "title": "Alice in Borderland",
-      "url": "https://www.netflix.com/watch/80200575",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.15384615384615385,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSTEImgYTujG2y7d25i3Pft4Gb6T-ayImlDqlgdepWDx7OmE81d5IusI133wrM_1Bw_J7smuxzahcF7EKWJmdSMH2LU.webp?r=637"
-      ],
-      "title": "A Anatomia de Grey",
-      "url": "https://www.netflix.com/watch/70140391",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.08333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZOjUuzcC0OD8-SKqCTWNYygxiJbaZGUpwIw4QAne7NJ_HqS874U2YUE3u4lwMK21bZTyUzbqoCjm_20ZZDkhculoGM.webp?r=782"
-      ],
-      "title": "Rua Cloverfield, 10",
-      "url": "https://www.netflix.com/watch/80082850",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.07692307692307693,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABai_0RV6eVPBmDu1i6jbrNUU17UlnILw33vthao96naik0rhE7heZN9H4A0wzjTPSes-n_dsigSYMSb4Ho1-CM6dVI8.webp?r=fc2"
-      ],
-      "title": "Cópias - De Volta à Vida",
-      "url": "https://www.netflix.com/watch/80232871",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbavNFRI0ml5Wrx41X6rRYQKig-ZXheQ2ofQlmV23B6SIc2kmAie_Bqax2IwcANjzzVvmmNU_dHmok9kLRzyYl9Yav0frffvd6-_Nc932zDEGnw2eEqUwehF_OCZ.jpg?r=aac"
-      ],
-      "title": "Big Mouth",
-      "url": "https://www.netflix.com/watch/80117038",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVp2asRLMqBDtgNX3bwzallgbvVwPg5d8BWUMuJjnesDoy8BJjjcirT4IRdWrCopjNdbNpCPdUE0OJgqe6x5va-SB5rn9rDEYtFtFCMg1hLGNmIJ7oszYvXw-opz.jpg?r=9a7"
-      ],
-      "title": "The Umbrella Academy",
-      "url": "https://www.netflix.com/watch/80186863",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.14814814814814814,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSf41yKBUnekvd8r_lu4ffomP93ioDYEOAe0sC0v2kN2CQVlIdPgn8Wd-RvgsqO8SnqLYIlX0p-ZLL8v5_2x6e1jp2GXN-ANtBvreLtsyDUuR77-5F8hmpOaASyw.jpg?r=494"
-      ],
-      "title": "O Dilema das Redes",
-      "url": "https://www.netflix.com/watch/81254224",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSlxFpqqYnk8_gy7_EIiFooAcgmSx2zzsq5J0E_CZ5nrT3cN5EHN6bVfTQqC-494ji3kl1yqF4cz7Md_3b2kHUU6KOM5xIbO5Dc1xa246kmq-KIas40_14ZjSClKVnK7oA.webp?r=b71"
-      ],
-      "title": "Superstore: Uma Loja de Inconveniências",
-      "url": "https://www.netflix.com/watch/80061132",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.045454545454545456,
-        "keyword": "black mirror"
-      }
-    }
-  ],
-  "keyword": "black mirror",
-  "providers": [
-    "globoplay",
-    "netflix",
-    "prime"
-  ],
-  "goodContents": [
-    {
-      "pictures": [
-        "https://s2.glbimg.com/Wo71tC9_eNsM44Vneh-M18bN-FY=/362x536/https://s2.glbimg.com/rHkeFhIgBp4MZi6oJFNtXVkTrwk=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/q/7/0U7hPKTDinO8z2Xr0GMw/2020-851-black-box-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Black Box: Armadilhas da Mente",
-      "url": "https://globoplay.globo.com/black-box-armadilhas-da-mente/t/HzKJwjGgPw/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.22857142857142856,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSRMHffe6dip9Os7aq_ia8yJk2aN3-lRSaDdBUc6WY-sBERNYpVFGWGkXcjwAw1NFXN9oOe2-zV6_v2PE0wChKyXD0amgDM4Ps3qizKNGxOLtq5H-8DS4Wn7iaTF.jpg?r=fcc"
-      ],
-      "title": "Black Mirror",
-      "url": "https://www.netflix.com/watch/70264888",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 1,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/adNspvhzUHLqIRdkgkCWbt15V8E=/362x536/https://s2.glbimg.com/bPMTtMz3tvQyfjCWPr856-LOT64=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/k/k/nmNiXiR1KkOCJDxo1XDw/2021-38-sexta-black-poster-globoplay-1-.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Sexta Black",
-      "url": "https://globoplay.globo.com/sexta-black/t/KXmgXDsCpK/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.42105263157894735,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABR1mIQO3HHyjHgmxOHvaK7aO_konK_xrKMZELIue_EG-N5zY8v_nv07hku7dEA9zPs4eAYtWQ7YaN7WyMGv3-074a6LTTS9MoGxlFuXZ7FiV6CSugH0Yne-Ltvkhoxcc-ru1ztI1_waKTkvOkF1n8JxyRGooQXSnyWPmiJ_Se3wTj5UFnPjW3z0.jpg?r=d26"
-      ],
-      "title": "Black Mirror: Bandersnatch",
-      "url": "https://www.netflix.com/watch/80988062",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.268Z",
-      "rating": {
-        "rate": 0.6060606060606061,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/butSxZCDehznB9vdpvGt3HkUENA=/362x536/https://s2.glbimg.com/azLPokJpVogoK-tz3uLM2aR4xow=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/o/k/d8TD1BQ9GaBCdQAjDjmQ/2020-1245-eles-nao-usam-black-tie-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Eles Não Usam Black-Tie",
-      "url": "https://globoplay.globo.com/eles-nao-usam-black-tie/t/nCzttxfSvD/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.27586206896551724,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/mWelrAJOQj6Ks2gPlhTL16xyWYA=/362x536/https://s2.glbimg.com/V-rAmSFShXIvmgDLpsiUbARTdo0=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/8/x/ZbJvveQkWUPGAgcGV05Q/2020-amy-winehouse-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Amy Winehouse Back To Black: Classic Albums",
-      "url": "https://globoplay.globo.com/amy-winehouse-back-to-black-classic-albums/t/gGp1sdrx2r/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.17391304347826086,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/755889a3772560e3d7e96d581b4150e006ef011439f19ccb7748ad972dd5962b._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "O demônio de Natal está de volta e agora libera sua ira sobre os moradores de uma pequena cidade. Apenas uma jovem nada comum pode ser capaz de deter o Krampus. Ninguém está seguro!",
-      "title": "Krampus - O Acordo",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0KAF465PEPWMVRDXA36UL1WHJE/ref=atv_sr_def_c_unkc_4_1_4?sr=1-4&pageTypeIdSource=ASIN&pageTypeId=B07XNL4NB2&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.16666666666666666,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/aS8NEjkOWu7B8sU-wG63EgXpYUI=/362x536/https://s2.glbimg.com/ldDyPk3VvlqdNTl7-QTcMJ4BwFc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/s/h/1JR5gVSRCL55nAjOcwzg/2020-bowie-black-tie-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "David Bowie - Black Tie, White Noise",
-      "url": "https://globoplay.globo.com/david-bowie-black-tie-white-noise/t/LppTdWdrdm/",
-      "foundAt": "2021-12-18T16:34:25.126Z",
-      "rating": {
-        "rate": 0.20512820512820512,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/SxF94dHV0HSJV7ogK6YwFRoaGgI=/362x536/https://s2.glbimg.com/JixejibJxL2yTqLwBgfibdTZc0c=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/s/n/aPBxIiStW76snztVTvxw/2020-989-blm-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "Black Lives Matter - O Movimento Negro Hoje",
-      "url": "https://globoplay.globo.com/black-lives-matter-o-movimento-negro-hoje/t/HbwNxDDkby/",
-      "foundAt": "2021-12-18T16:34:25.129Z",
-      "rating": {
-        "rate": 0.2222222222222222,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTAUONuEfq7Yndi9WZNW-DkkVXL6fDOp9GY9k7YRExK6QL4PbJqA7rZ65fO5FdNbsLNbY0Xjy6c4QPbiyoZQ7lLL0DU.webp?r=7ce"
-      ],
-      "title": "Rick and Morty",
-      "url": "https://www.netflix.com/watch/80014749",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.269Z",
-      "rating": {
-        "rate": 0.19047619047619047,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/xX7mjoDh2MuoOQwOBcGebBbS3Jw=/362x536/https://s2.glbimg.com/SBVCDoiH8cRjLP0IGC03GzZe6Lc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/B/6/FwHsyJRrGxZ2BSBLo5zA/2020-823-the-blacklist-red-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "The Blacklist: Redenção",
-      "url": "https://globoplay.globo.com/the-blacklist-redencao/t/P6rNK8HLXf/",
-      "foundAt": "2021-12-18T16:34:25.129Z",
-      "rating": {
-        "rate": 0.26666666666666666,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://s2.glbimg.com/iJvHztSy1lfB7Lfsd_cv9hysyPM=/362x536/https://s2.glbimg.com/AP_slcCqFaB1yffr1udxvhyZ_Ck=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/e/A/X0C6JhS5C18MXMjbBBXA/2021-the-blackboard-poster.jpg"
-      ],
-      "provider": "globoplay",
-      "title": "The Blackboard",
-      "url": "https://globoplay.globo.com/the-blackboard/t/F6XwDPWtqx/",
-      "foundAt": "2021-12-18T16:34:25.144Z",
-      "rating": {
-        "rate": 0.36363636363636365,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABegkwVeQ6Cosbt12uJdnNW8KaOyQbD8bwNKGE7WWCzsMW0wmsZxVCBwMD81Id5ZMNfg2k68ZBfEM5TuYuTUZmjamodPWMNpLq94k5ddrb1itCfB0Q8mPXeqfajpe.jpg?r=2de"
-      ],
-      "title": "Como Se Tornar um Tirano",
-      "url": "https://www.netflix.com/watch/80989772",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.13793103448275862,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/fa2027db1cf49d1801cf995e7ff36224c2f6d84b7711c9fed40e8ab754748564._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "Depression-era bank robber John Dillinger's (Johnny Depp) charm and audacity endear him to much of America's downtrodden public, but he's also a thorn in the side of J. Edgar Hoover (Billy Crudup) and the fledgling FBI. Desperate to capture the elusive outlaw, Hoover makes Dillinger his first Public Enemy Number One and assigns his top agent, Melvin Purvis (Christian Bale), the task of bringing hi",
-      "title": "Public Enemies",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0S7X9F2ZNHR7121BPAHZIUZ3YB/ref=atv_sr_def_c_unkc_15_1_15?sr=1-15&pageTypeIdSource=ASIN&pageTypeId=B01M6Y7V9U&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.377Z",
-      "rating": {
-        "rate": 0.18181818181818182,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c8c7185aa79b45132dd6b188bd186f4c489f24066eff6c3195fd072e55171005._UR1920,1080_RI_UX400_UY225_.jpg"
-      ],
-      "description": "An agent newly retired from the CIA (Scott Glenn) agrees to become an Italian businessman's bodyguard in this adventure film. Things fall apart though, when terrorists kidnap the Italian'...",
-      "title": "Man On Fire",
-      "provider": "prime",
-      "url": "https://www.primevideo.com/detail/0OWLQ7DOBLNCULIU5LAZTXBXUI/ref=atv_sr_def_c_unkc_17_1_17?sr=1-17&pageTypeIdSource=ASIN&pageTypeId=B0771KX4KD&qid=1639845263",
-      "foundAt": "2021-12-18T16:34:22.378Z",
-      "rating": {
-        "rate": 0.1111111111111111,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWPxYAYMFr5SxfipPSR2amTR97nEq9m6_bOvNtXoO-GGBQ8oxNgs7Y6QaR-rszLKQdcn93tfA4OIxo4feuNBjXLx2Xwew34YwcpMmrl956RNE7COoGYxO3BZZhZ3.jpg?r=d4e"
-      ],
-      "title": "Explicando... Dinheiro",
-      "url": "https://www.netflix.com/watch/81345769",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.13333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYYkdM1XEqnCIExiNmhRCs5pKGaj0DlZ6Jh6M76XzUwuzz_Qe5_w81fn3zH0_Ch41CgjidXGwPwRntHGvM9arQdLRTJOZl1WaoElGF0odXCH1ZFGxvBJRpOfcBBZXwRrZpFRV8NZSTj9r4j-U2cJ0DjFfpA6s-qYNyor5ktfRDvjMWtM_Uhg6ZUrBhEac3My51ABHCaxv6Vw0fFnAePz0b5W.jpg?r=4c4"
-      ],
-      "title": "La casa de papel",
-      "url": "https://www.netflix.com/watch/80192098",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.271Z",
-      "rating": {
-        "rate": 0.18181818181818182,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaXm1fTR2xkOl8HKwD8G2dQSumeJ7IDnfipt8lIRDDvIUhiQJFxm716tIs9EntGKoj08qARWLLddsUT92x4BE7NIwVQ.webp?r=729"
-      ],
-      "title": "A Chegada",
-      "url": "https://www.netflix.com/watch/80117799",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.11764705882352941,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdsyasFJmH8i-CYvab6FAhNbCTjurUaI75G3Kk4QWJuEXEfjBh_pajBKQ21MMqzIdbnXqrzug7pDSRX5XhgZ53eJ32g.webp?r=677"
-      ],
-      "title": "Passageiros",
-      "url": "https://www.netflix.com/watch/80117456",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.2,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfuN-1_qwmhpDYjRjVt-TSDUK8GH46XsLhCLN-cXiPBZ7aF7prm_LxbeViMXDHcm-8ubp8aJq0iOr141p0R5X2lP7HHIUP10tWl7mDDCwEaaMI-86TDz_7Op6k7q.jpg?r=daf"
-      ],
-      "title": "Round 6",
-      "url": "https://www.netflix.com/watch/81040344",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.13333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcZS0pFQ_XhzZ4xE_7f2jSlAG5DYr0YpncMToLe_b0a9Bj9y53pnBUpL7MZUUe7rpcp718xeLMedbxeaOdGmdoNLVFIoDK5-9CQ6XySUKbfhkZ6duh7xtx7C3EV7.jpg?r=51b"
-      ],
-      "title": "A Vida em Outros Planetas",
-      "url": "https://www.netflix.com/watch/80221410",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.13333333333333333,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRAzapJ4LKot1c3Rhbqi-zh6VPy-mO-mqAnv9cTAVXTQ-s2lbM_gmy6Gjb5z9TNdxWVqIhhodRuUMJV0khdD1V0xJvz_F74CrFon2EBn6yTnrQ3D1hs6EwRL0XzU.jpg?r=14d"
-      ],
-      "title": "BoJack Horseman",
-      "url": "https://www.netflix.com/watch/70300800",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.2608695652173913,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe2cuMWXauQh3C7ddBWrt0-I1Wv_P6qwsh-pWPB55wedpyhdEn4gNSUnaOKKmTDBUTu9HUKe9G0wGgnTvm-aA_CJq9fQQVr-GqGXtTteONLQboqEiLhk436ELLkh.jpg?r=39b"
-      ],
-      "title": "Garota de Fora",
-      "url": "https://www.netflix.com/watch/80241947",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.19047619047619047,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQFVX9YeOK6W1nJCuluKtwXB-q8HBhlNzdO7ENs4gBEZG544_QfvHwZ4GVr6iYk5ZW7nxkT6r0mGrMjhT7eBVujHiAN_GVJ0x6z2W70HCyb84Ck4tE84xhdqQuZ1.jpg?r=6a0"
-      ],
-      "title": "Alice in Borderland",
-      "url": "https://www.netflix.com/watch/80200575",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.15384615384615385,
-        "keyword": "black mirror"
-      }
-    },
-    {
-      "pictures": [
-        "https://occ-0-417-3852.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVp2asRLMqBDtgNX3bwzallgbvVwPg5d8BWUMuJjnesDoy8BJjjcirT4IRdWrCopjNdbNpCPdUE0OJgqe6x5va-SB5rn9rDEYtFtFCMg1hLGNmIJ7oszYvXw-opz.jpg?r=9a7"
-      ],
-      "title": "The Umbrella Academy",
-      "url": "https://www.netflix.com/watch/80186863",
-      "provider": "netflix",
-      "foundAt": "2021-12-18T16:34:25.272Z",
-      "rating": {
-        "rate": 0.14814814814814814,
-        "keyword": "black mirror"
-      }
-    }
-  ],
-  "startedAt": "2021-12-18T16:34:20.105Z",
-  "finishedAt": "2021-12-18T16:34:33.588Z",
-  "duration": 13483
+  "id": "c49cff75-0708-4745-8e19-e3ce60d65024"
 }

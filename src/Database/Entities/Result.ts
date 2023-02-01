@@ -7,5 +7,5 @@ export class Result {
   searchId: string
   contentId: string
   duration: number
-  matchRate: string
+  matchRate: number
 }

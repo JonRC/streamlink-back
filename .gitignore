@@ -7,3 +7,5 @@ dist
 *.localStorage
 result.json
 yarn-error.log
+
+src/GraphQL/generated.ts

@@ -1,20 +1,25 @@
 import { config } from 'dotenv'
 import puppeteer, { ElementHandle, Page } from 'puppeteer'
 import { stringify } from 'query-string'
+import { v4 } from 'uuid'
 
 import { Content } from 'Database/Entities/Content'
+import {
+  cluster,
+  InitCluster,
+  runContentProvider
+} from 'Services/PuppeteerCluster/Cluster'
 import { CookiesStorage } from 'Util'
 import { DateUtil } from 'Util/Date'
 
 import { ContentProvider, ProviderResult } from './ContentProvider'
 config()
 
-export const netflixProvider: ContentProvider = async (keyword, headless) => {
+export const netflixProvider: ContentProvider = async ({
+  data: { keyword },
+  page
+}) => {
   const startedAt = new Date()
-
-  const browser = await puppeteer.launch({ headless })
-
-  const page = await browser.newPage()
 
   const query = stringify({
     q: keyword
@@ -41,18 +46,16 @@ export const netflixProvider: ContentProvider = async (keyword, headless) => {
     .catch(() => false)
   if (!validSearch) return []
 
-  const containers = await page.$$<HTMLDivElement>('.title-card-container')
+  const containers = await page.$$('div.title-card-container')
 
   const contents = await Promise.all(containers.map(getContent(startedAt)))
-
-  await browser.close()
 
   return contents
 }
 
 const login = async (page: Page) => {
-  const login = process.env.NETFLIX_USERNAME
-  const password = process.env.NETFLIX_PASSWORD
+  const login = process.env.NETFLIX_USERNAME as string
+  const password = process.env.NETFLIX_PASSWORD as string
 
   /**
    * Id and password
@@ -102,10 +105,13 @@ const getContent =
 
     const url = holeUrl?.split('?')[0] || alternativeUrl
 
+    const [, contentId] = url.match(/watch\/(\d+)/) || ([] as undefined[])
+
     const foundAt = new Date()
 
     const providerResult: ProviderResult = {
       content: {
+        id: contentId || `invalid-${v4()}`,
         imageUrl,
         provider: 'netflix',
         title,

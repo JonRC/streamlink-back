@@ -1,9 +1,16 @@
-import { serverSetup } from 'Server/setup'
+import { Express, GraphQLServer } from 'Server'
+import { InitCluster } from 'Services/PuppeteerCluster'
 
 const init = async () => {
-  serverSetup()
+  await InitCluster()
+  Express.serverSetup()
+  await GraphQLServer.init()
 }
 
-init().catch(() => {
-  console.error()
-})
+init()
+// .then(() => doSearch('terror'))
+// .then(content => JSON.stringify(content, null, 2))
+// .then(result => {
+//   console.log(result)
+//   fs.writeFileSync('result.json', result)
+// })

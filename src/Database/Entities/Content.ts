@@ -1,4 +1,5 @@
 export type Content = {
+  id: string
   imageUrl: string
   imageWidth: number
   imageHeight: number

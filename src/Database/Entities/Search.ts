@@ -6,4 +6,5 @@ export type Search = {
   startedAt: Date
   finishedAt: Date
   duration: number
+  id: string
 }
